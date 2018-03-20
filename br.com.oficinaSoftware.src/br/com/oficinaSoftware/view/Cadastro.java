@@ -3,8 +3,6 @@ package br.com.oficinaSoftware.view;
 import java.sql.SQLException;
 
 import br.com.oficinaSoftware.controller.UsuarioController;
-import br.com.oficinaSoftware.dao.UsuarioDAO;
-import br.com.oficinaSoftware.entity.Usuario;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -93,16 +91,14 @@ public class Cadastro extends Application {
 
 		btnSalvar.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent e) {
-				try {
 					UsuarioController usuarioController = new UsuarioController();
-					Usuario usuario = usuarioController.getValidaPraSalvar(nome, email, senha, confirmaSenha);
-					UsuarioDAO dao = new UsuarioDAO();
-					dao.salvarUsuario(usuario);
-				} catch (ClassNotFoundException e1) {
-					System.out.println(e1);
-				} catch (SQLException e1) {
-					System.out.println(e1);
-				}
+					try {
+						usuarioController.getValidaPraSalvar(nome, email, senha, confirmaSenha);
+					} catch (ClassNotFoundException e1) {
+						System.out.println(e1);
+					} catch (SQLException e1) {
+						System.out.println(e1);
+					}
 			}
 		});
 		stage.setScene(scene);
