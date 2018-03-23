@@ -21,11 +21,14 @@ public class UsuarioDAO {
 	
 	public void salvarUsuario(Usuario usuario) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome, email, senha) VALUES (?, ?, ?)");
-
+		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome,cpf,endereco,cargo,telefone,email,senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
 		stmt.setString(1, usuario.getNome());
-		stmt.setString(2, usuario.getEmail());
-		stmt.setString(3, usuario.getSenha());
+		stmt.setString(2, usuario.getCpf());
+		stmt.setString(3, usuario.getCargo());
+		stmt.setString(4, usuario.getEndereco());
+		stmt.setString(5, usuario.getTelefone());
+		stmt.setString(6, usuario.getEmail());
+		stmt.setString(7, usuario.getSenha());
 
 		stmt.executeUpdate();
 	}
