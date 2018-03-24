@@ -12,28 +12,31 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class Cadastro extends UsuarioController implements Initializable{
+public class Cadastro extends UsuarioController implements Initializable {
 
 	@FXML
-	TextField idNome;
+	private TextField idNome;
 	@FXML
-	TextField idCpf;
+	private TextField idCpf;
 	@FXML
-	TextField idEndereco;
+	private TextField idEndereco;
 	@FXML
-	TextField idCargo;
+	private TextField idCargo;
 	@FXML
-	TextField idTelefone;
+	private TextField idTelefone;
 	@FXML
-	TextField idEmail;
+	private TextField idEmail;
 	@FXML
-	PasswordField idSenha;
+	private PasswordField idSenha;
 	@FXML
-	PasswordField idConfSenha;
-
+	private PasswordField idConfSenha;
+	@FXML
+	private Label idMessage;
+	
 	@FXML
 	private void botaoVoltar(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
@@ -43,8 +46,21 @@ public class Cadastro extends UsuarioController implements Initializable{
 
 	@FXML
 	private void botaoCadastrar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
-	getValidaPraSalvar(idNome.getText(), idCpf.getText(), idEndereco.getText(), idCargo.getText(),
-				idTelefone.getText(), idEmail.getText(), idSenha.getText(), idConfSenha.getText());
+
+		String retorno = getValidaPraSalvar(idNome.getText(), idCpf.getText(), idEndereco.getText(), idCargo.getText(),idTelefone.getText(), idEmail.getText(), idSenha.getText(), idConfSenha.getText());
+
+		if (retorno.equals("")) {
+			idNome.setText("");
+			idCpf.setText("");
+			idEndereco.setText("");
+			idCargo.setText("");
+			idTelefone.setText("");
+			idEmail.setText("");
+			idSenha.setText("");
+			idConfSenha.setText("");
+		}else {
+			idMessage.setText(retorno);
+		}
 	}
 
 	@Override

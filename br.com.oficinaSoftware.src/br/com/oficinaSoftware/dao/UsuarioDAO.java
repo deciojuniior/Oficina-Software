@@ -3,6 +3,7 @@ package br.com.oficinaSoftware.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import br.com.oficinaSoftware.entity.Usuario;
 
@@ -31,5 +32,17 @@ public class UsuarioDAO {
 		stmt.setString(7, usuario.getSenha());
 
 		stmt.executeUpdate();
+	}
+	
+	public int buscarUsuario(String email, String senha) throws ClassNotFoundException, SQLException {
+		Connection conexao = conexaoUsuario();
+		String sql = "SELECT count(*) FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
+		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+		ResultSet resultSet = stmt.executeQuery();
+		int cont = 0;
+		if (resultSet.next()) {  
+		 cont = resultSet.getInt(1);
+		} 	
+		return cont;  
 	}
 }

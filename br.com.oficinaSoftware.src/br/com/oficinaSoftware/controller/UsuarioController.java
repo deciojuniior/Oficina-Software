@@ -8,11 +8,10 @@ public class UsuarioController {
 
 	private UsuarioDAO dao = new UsuarioDAO();
 
-	public void getValidaPraSalvar(String nome, String cpf, String endereco, String cargo, String telefone,
-			String email, String senha, String confirmaSenha) throws ClassNotFoundException, SQLException {
+	public String getValidaPraSalvar(String nome, String cpf, String endereco, String cargo, String telefone,String email, String senha, String confirmaSenha) throws ClassNotFoundException, SQLException {
 		Usuario usuario = new Usuario();
-		if (nome.length() != 0 && senha.length() != 0 && confirmaSenha.length() != 0 && email.length() != 0
-				&& cpf.length() != 0 && endereco.length() != 0 && cargo.length() != 0 && telefone.length() != 0) {
+		String retorno = "";
+		if (nome.length() != 0 && senha.length() != 0 && confirmaSenha.length() != 0 && email.length() != 0	&& cpf.length() != 0 && endereco.length() != 0 && cargo.length() != 0 && telefone.length() != 0) {
 			if (senha.equals(confirmaSenha)) {
 				usuario.setNome(nome);
 				usuario.setCpf(cpf);
@@ -23,15 +22,11 @@ public class UsuarioController {
 				usuario.setSenha(senha);
 				dao.salvarUsuario(usuario);
 			} else {
-				System.out.println("As senhas estão diferentes");
+				retorno = "As senhas informadas estão diferentes.";
 			}
 		} else {
-			System.out.println("Campos obrigatórios não preenchidos");
+			retorno =  "Campos obrigatórios não preenchidos.";
 		}
-	}
-
-	public void getTeste() {
-		System.out.println("AQUI");
-
+		return retorno;
 	}
 }
