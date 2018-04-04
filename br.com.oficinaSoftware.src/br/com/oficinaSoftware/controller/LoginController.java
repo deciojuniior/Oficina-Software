@@ -13,10 +13,10 @@ public class LoginController {
 		if (email.length() != 0 && senha.length() != 0) {
 			int cont = dao.buscarUsuario(email, senha);
 			if(cont == 0) {
-				retorno = "Email e senha não cadastrados!";
+				retorno = "Email e senha nao cadastrados!";
 			}
 		} else {
-			retorno = "Campos obrigatórios não preenchidos.";
+			retorno = "Campos obrigatorios nao preenchidos.";
 		}
 		return retorno;
 	}

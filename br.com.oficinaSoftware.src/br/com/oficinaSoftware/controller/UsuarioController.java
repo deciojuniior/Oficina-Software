@@ -22,10 +22,10 @@ public class UsuarioController {
 				usuario.setSenha(senha);
 				dao.salvarUsuario(usuario);
 			} else {
-				retorno = "As senhas informadas estão diferentes.";
+				retorno = "As senhas informadas estao diferentes.";
 			}
 		} else {
-			retorno =  "Campos obrigatórios não preenchidos.";
+			retorno =  "Campos obrigatorios nao preenchidos.";
 		}
 		return retorno;
 	}
