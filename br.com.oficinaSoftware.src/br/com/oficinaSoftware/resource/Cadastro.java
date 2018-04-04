@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 public class Cadastro extends UsuarioController implements Initializable {
 
@@ -36,7 +37,7 @@ public class Cadastro extends UsuarioController implements Initializable {
 	private PasswordField idConfSenha;
 	@FXML
 	private Label idMessage;
-	
+
 	@FXML
 	private void botaoVoltar(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
@@ -47,7 +48,8 @@ public class Cadastro extends UsuarioController implements Initializable {
 	@FXML
 	private void botaoCadastrar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
 
-		String retorno = getValidaPraSalvar(idNome.getText(), idCpf.getText(), idEndereco.getText(), idCargo.getText(),idTelefone.getText(), idEmail.getText(), idSenha.getText(), idConfSenha.getText());
+		String retorno = getValidaPraSalvar(idNome.getText(), idCpf.getText(), idEndereco.getText(), idCargo.getText(),
+				idTelefone.getText(), idEmail.getText(), idSenha.getText(), idConfSenha.getText());
 
 		if (retorno.equals("")) {
 			idNome.setText("");
@@ -58,9 +60,32 @@ public class Cadastro extends UsuarioController implements Initializable {
 			idEmail.setText("");
 			idSenha.setText("");
 			idConfSenha.setText("");
-		}else {
+		} else {
 			idMessage.setText(retorno);
 		}
+	}
+
+	@FXML
+	private void verificaLenght(KeyEvent event) {
+		if (idSenha.getText().length() == 8) {
+			limpaCampo(idSenha);
+		}
+		if (idConfSenha.getText().length() == 8) {
+			limpaCampo(idConfSenha);
+		}
+		if (idCpf.getText().length() == 11) {
+			limpaCampo(idCpf);
+		}
+		if (idTelefone.getText().length() == 14) {
+			limpaCampo(idTelefone);
+		}
+	}
+
+	private void limpaCampo(TextField text) {
+		text.setEditable(false);
+		idMessage.setText("O campo tem um numero maximo de digitos");
+		text.setText("");
+		text.setEditable(true);
 	}
 
 	@Override
