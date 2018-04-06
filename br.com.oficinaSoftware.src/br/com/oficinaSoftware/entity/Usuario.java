@@ -19,9 +19,7 @@ public class Usuario {
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	public void setNome(String nome) { this.nome = nome; }
 	public String getCpf() {
 		return cpf;
 	}
@@ -57,5 +55,16 @@ public class Usuario {
 	}
 	public void setSenha(String senha) {
 		this.senha = senha;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario{" +
+				"nome='" + nome + '\'' +
+				", endereco='" + endereco + '\'' +
+				", cargo='" + cargo + '\'' +
+				", telefone='" + telefone + '\'' +
+				", email='" + email + '\'' +
+				'}';
 	}
 }

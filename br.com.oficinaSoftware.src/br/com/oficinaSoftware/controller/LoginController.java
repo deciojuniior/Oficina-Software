@@ -12,7 +12,7 @@ public class LoginController {
 		String retorno = "";
 		if (email.length() != 0 && senha.length() != 0) {
 			int cont = dao.buscarUsuario(email, senha);
-			if(cont == 0) {
+			if (cont == 0) {
 				retorno = "Email e senha nao cadastrados!";
 			}
 		} else {

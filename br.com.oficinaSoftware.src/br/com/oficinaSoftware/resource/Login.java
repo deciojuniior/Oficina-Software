@@ -16,7 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class Login extends LoginController implements Initializable {
+public class Login extends LoginController implements Initializable{
 
 	@FXML
 	private TextField idLogarEmail;
@@ -29,15 +29,16 @@ public class Login extends LoginController implements Initializable {
 	private void botaoLogar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
 		
 		String retorno = getValidaPraLogar(idLogarEmail.getText(), idLogarSenha.getText());
-		
+
 		if (retorno.equals("")) {
 			Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
 			Scene scene = new Scene(root);
 			Main.myStage.setScene(scene);
-		}else {
+			}else {
 			idLogarMessage.setText(retorno);
 		}
 	}
+
 
 	@FXML
 	private void botaoCadastrar(ActionEvent event) throws IOException {

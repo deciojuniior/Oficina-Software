@@ -15,5 +15,11 @@ public class Menu {
 		Scene scene = new Scene(root);
 		Main.myStage.setScene(scene);
 	}
+	@FXML
+	private void botaoPerfil(ActionEvent event) throws IOException {
+		Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/PerfilUsuario.fxml"));
+		Scene scene = new Scene(root);
+		Main.myStage.setScene(scene);
+	}
 
 }
