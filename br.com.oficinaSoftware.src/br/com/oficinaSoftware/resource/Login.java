@@ -31,9 +31,13 @@ public class Login extends LoginController implements Initializable{
 		String retorno = getValidaPraLogar(idLogarEmail.getText(), idLogarSenha.getText());
 
 		if (retorno.equals("")) {
+					
 			Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
 			Scene scene = new Scene(root);
 			Main.myStage.setScene(scene);
+			
+			populaPerfil(idLogarEmail.getText(), idLogarSenha.getText());
+			
 			}else {
 			idLogarMessage.setText(retorno);
 		}

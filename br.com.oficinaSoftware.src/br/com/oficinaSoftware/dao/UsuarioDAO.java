@@ -5,8 +5,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 import br.com.oficinaSoftware.entity.Usuario;
 
@@ -62,30 +60,11 @@ public class UsuarioDAO {
 		return cont;
 	}
 
-	public Usuario buscarPerfil(String email, String senha) throws ClassNotFoundException, SQLException {
-		//ArrayList<Usuario> usuarios = new ArrayList<>();
+	public ResultSet buscarPerfil(String email, String senha) throws ClassNotFoundException, SQLException {
+	
+		PreparedStatement stmt = conc.prepareStatement("SELECT nome, cargo, telefone, endereco, senha FROM usuario WHERE usuario.email= \'" + email + "\'AND usuario.senha =\'" + senha + "\';");
+		ResultSet rs = stmt.executeQuery();
 
-		try {
-			PreparedStatement stmt = conc.prepareStatement("SELECT nome, cargo, telefone, endereco, senha FROM usuario WHERE usuario.email= \'" + email + "\'AND usuario.senha =\'" + senha + "\';");
-			//stmt.prepareStatement(stmt, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			ResultSet rs = stmt.executeQuery();
-
-			Usuario user;
-			if (rs.next()) {
-				user = new Usuario();
-				//UsuarioDAO pf = new UsuarioDAO();
-
-				user.setNome(rs.getString("nome"));
-				user.setCargo(rs.getString("cargo"));
-				user.setTelefone(rs.getString("telefone"));
-				user.setEndereco(rs.getString("endereco"));
-				user.setSenha(rs.getString("senha"));
-				return user;
-				//usuarios.add(user);
-			}
-		} catch (SQLException e){
-			e.printStackTrace();
-		}
-		return null;
+		return rs;
 	}
 }

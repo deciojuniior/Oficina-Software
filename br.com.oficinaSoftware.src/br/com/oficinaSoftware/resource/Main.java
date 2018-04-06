@@ -1,9 +1,6 @@
 package br.com.oficinaSoftware.resource;
 
 import java.io.IOException;
-import java.sql.SQLException;
-
-import br.com.oficinaSoftware.dao.UsuarioDAO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,15 +22,6 @@ public class Main extends Application {
 		root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
 
 		Scene scene = new Scene(root);
-		UsuarioDAO usuarioDAO = new UsuarioDAO();
-
-		try {
-			System.out.println(usuarioDAO.buscarPerfil("matheus@gmail.com","123"));
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 
 		primaryStage.setScene(scene);
 		myStage = primaryStage;

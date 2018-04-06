@@ -1,50 +1,48 @@
 package br.com.oficinaSoftware.resource;
 
 import java.io.IOException;
-import java.net.URL;
-import java.sql.SQLException;
-import java.time.format.TextStyle;
-import java.util.ResourceBundle;
 
-
+import br.com.oficinaSoftware.entity.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 
 public class PerfilUsuario {
 
     @FXML
-    private TextField idNome;
+    private TextField idNomeP;
     @FXML
-    private TextField idCpf;
+    private TextField idEnderecoP;
     @FXML
-    private TextField idEndereco;
+    private TextField idCargoP;
     @FXML
-    private TextField idCargo;
+    private TextField idTelefoneP;
     @FXML
-    private TextField idTelefone;
+    private TextField idEmailP;
     @FXML
-    private TextField idEmail;
+    private TextField idIdadeP;
+    
+	Usuario usuario;
+    
     @FXML
-    private PasswordField idSenha;
-    @FXML
-    private PasswordField idConfSenha;
-    @FXML
-    private Label idMessage;
-    @FXML
-    private void botaoVolta (ActionEvent event) throws IOException {
+    private void botaoVoltar (ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
     }
-
-    public void teste() {
-        idMessage.setText("VNSDJVKNSDKCJVBKZJXB");
+    
+    @FXML
+    private void popularTela() {
+    	idNomeP.setText(usuario.getNome());
+    	idCargoP.setText(usuario.getCargo());
+    	idEmailP.setText(usuario.getEmail());
+    	idEnderecoP.setText(usuario.getEndereco());
+    	idIdadeP.setText("");
+    	idTelefoneP.setText(usuario.getTelefone());
+    	
     }
 }

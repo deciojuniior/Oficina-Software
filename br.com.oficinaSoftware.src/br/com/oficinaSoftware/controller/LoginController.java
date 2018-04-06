@@ -4,10 +4,11 @@ import java.sql.SQLException;
 
 import br.com.oficinaSoftware.dao.UsuarioDAO;
 
-public class LoginController {
+public class LoginController{
 
 	private UsuarioDAO dao = new UsuarioDAO();
-
+	private PerfilUsuarioController perfilUsuarioController;
+	
 	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
 		String retorno = "";
 		if (email.length() != 0 && senha.length() != 0) {
@@ -20,4 +21,9 @@ public class LoginController {
 		}
 		return retorno;
 	}
+	
+	public void populaPerfil(String email, String senha) throws ClassNotFoundException, SQLException {
+		perfilUsuarioController.populaPerfil(email, senha);
+	}
+	
 }
