@@ -1,19 +1,27 @@
 package br.com.oficinaSoftware.controller;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import br.com.oficinaSoftware.dao.UsuarioDAO;
+import br.com.oficinaSoftware.resource.Menu;
 
-public class LoginController{
+public class LoginController {
 
 	private UsuarioDAO dao = new UsuarioDAO();
-	private PerfilUsuarioController perfilUsuarioController;
-	
+	public Menu menu = new Menu();
+
 	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
 		String retorno = "";
 		if (email.length() != 0 && senha.length() != 0) {
-			int cont = dao.buscarUsuario(email, senha);
-			if (cont == 0) {
+			ResultSet rs = dao.buscarUsuario(email, senha);
+			if (rs.next()) {
+				if (rs.getString("_id") == null) {
+					retorno = "Email e senha nao cadastrados!";
+				} else {
+				//(rs.getString("_id"));// Retornar o _id do usuário pra fazer as buscas
+				}
+			} else {
 				retorno = "Email e senha nao cadastrados!";
 			}
 		} else {
@@ -21,9 +29,4 @@ public class LoginController{
 		}
 		return retorno;
 	}
-	
-	public void populaPerfil(String email, String senha) throws ClassNotFoundException, SQLException {
-		perfilUsuarioController.populaPerfil(email, senha);
-	}
-	
 }

@@ -10,19 +10,6 @@ import br.com.oficinaSoftware.entity.Usuario;
 
 public class UsuarioDAO {
 
-	protected Connection conc;
-
-
-	public UsuarioDAO() {
-		try {
-			this.conc = conexaoUsuario();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-	}
-
 	private Connection conexaoUsuario() throws SQLException, ClassNotFoundException {
 		String url ="jdbc:postgresql://localhost:5432/OI";
         String usuario="postgres";
@@ -48,23 +35,20 @@ public class UsuarioDAO {
 		stmt.executeUpdate();
 	}
 
-	public int buscarUsuario(String email, String senha) throws ClassNotFoundException, SQLException {
+	public ResultSet buscarUsuario(String email, String senha) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();
-		String sql = "SELECT count(*) FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
+		String sql = "SELECT _id FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
 		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		ResultSet resultSet = stmt.executeQuery();
-		int cont = 0;
-		if (resultSet.next()) {
-		 cont = resultSet.getInt(1);
-		}
-		return cont;
+		
+		return resultSet;
 	}
 
-	public ResultSet buscarPerfil(String email, String senha) throws ClassNotFoundException, SQLException {
-	
-		PreparedStatement stmt = conc.prepareStatement("SELECT nome, cargo, telefone, endereco, senha FROM usuario WHERE usuario.email= \'" + email + "\'AND usuario.senha =\'" + senha + "\';");
+	public ResultSet buscarPerfil(String _id) throws ClassNotFoundException, SQLException {
+		Connection conexao = conexaoUsuario();
+		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email FROM usuario WHERE usuario._id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
-
+	
 		return rs;
 	}
 }

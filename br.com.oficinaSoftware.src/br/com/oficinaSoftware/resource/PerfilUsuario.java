@@ -1,32 +1,35 @@
 package br.com.oficinaSoftware.resource;
 
 import java.io.IOException;
+import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
 
-import br.com.oficinaSoftware.entity.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 
 
-public class PerfilUsuario {
+public class PerfilUsuario implements Initializable {
 
     @FXML
-    private TextField idNomeP;
+    private TextField idNomeP = new TextField();
     @FXML
-    private TextField idEnderecoP;
+    private TextField idEnderecoP = new TextField();
     @FXML
-    private TextField idCargoP;
+    private TextField idCargoP = new TextField();
     @FXML
-    private TextField idTelefoneP;
+    private TextField idTelefoneP = new TextField();
     @FXML
-    private TextField idEmailP;
+    private TextField idEmailP = new TextField();
     @FXML
-    private TextField idIdadeP;
+    private TextField idIdadeP = new TextField();
     
-	Usuario usuario;
     
     @FXML
     private void botaoVoltar (ActionEvent event) throws IOException {
@@ -35,14 +38,18 @@ public class PerfilUsuario {
         Main.myStage.setScene(scene);
     }
     
-    @FXML
-    private void popularTela() {
-    	idNomeP.setText(usuario.getNome());
-    	idCargoP.setText(usuario.getCargo());
-    	idEmailP.setText(usuario.getEmail());
-    	idEnderecoP.setText(usuario.getEndereco());
+    public void popularTela(ResultSet rs) throws SQLException {
+    	while(rs.next()){
+    	idNomeP.setText(rs.getString("nome"));
+    	idCargoP.setText(rs.getString("cargo"));
+    	idEmailP.setText(rs.getString("email"));
+    	idEnderecoP.setText(rs.getString("endereco"));
+    	idTelefoneP.setText(rs.getString("telefone"));
     	idIdadeP.setText("");
-    	idTelefoneP.setText(usuario.getTelefone());
-    	
+}
     }
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {		
+	}
 }

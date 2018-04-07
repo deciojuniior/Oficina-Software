@@ -28,7 +28,7 @@
                 <TextField fx:id="idIdadeP" layoutX="93.0" layoutY="184.0" prefWidth="200.0" />
                 <Label layoutX="312.0" layoutY="168.0" text="Endereço" />
                 <TextField fx:id="idEnderecoP" layoutX="312.0" layoutY="184.0" prefWidth="200.0" />
-            <Button layoutX="70.0" layoutY="328.0" mnemonicParsing="false" text="Voltar" onAction="#botaoVoltar" />
+            	<Button layoutX="70.0" layoutY="328.0" mnemonicParsing="false" text="Voltar" onAction="#botaoVoltar" />
                 <Button layoutX="428.0" layoutY="328.0" mnemonicParsing="false" text="Alterar Perfil" />
             </children></Pane>
     </children>
