@@ -1,32 +1,63 @@
 package br.com.oficinaSoftware.controller;
 
-import java.sql.ResultSet;
+import java.io.IOException;
+import java.net.URL;
 import java.sql.SQLException;
+import java.util.ResourceBundle;
 
 import br.com.oficinaSoftware.dao.UsuarioDAO;
-import br.com.oficinaSoftware.resource.Menu;
+import br.com.oficinaSoftware.resource.Main;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-public class LoginController {
+public class LoginController implements Initializable {
 
-	private UsuarioDAO dao = new UsuarioDAO();
-	public Menu menu = new Menu();
+    @FXML
+    private TextField idLogarEmail;
+    @FXML
+    private PasswordField idLogarSenha;
+    @FXML
+    private Label idLogarMessage;
 
-	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
-		String retorno = "";
-		if (email.length() != 0 && senha.length() != 0) {
-			ResultSet rs = dao.buscarUsuario(email, senha);
-			if (rs.next()) {
-				if (rs.getString("_id") == null) {
-					retorno = "Email e senha nao cadastrados!";
-				} else {
-				//(rs.getString("_id"));// Retornar o _id do usuário pra fazer as buscas
-				}
-			} else {
-				retorno = "Email e senha nao cadastrados!";
-			}
-		} else {
-			retorno = "Campos obrigatorios nao preenchidos.";
-		}
-		return retorno;
-	}
+    @FXML
+    private void botaoLogar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
+
+        UsuarioDAO dao = new UsuarioDAO();
+
+        String email = idLogarEmail.getText();
+        String senha = idLogarSenha.getText();
+
+        if(email.length() == 0 || senha.length() == 0){
+            idLogarMessage.setText("Algum dos campos está vazio.");
+        }else{
+            if (dao.getValidaPraLogar(email, senha)) {
+                Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
+                Scene scene = new Scene(root);
+                Main.myStage.setScene(scene);
+            }else {
+                idLogarMessage.setText("Email ou senha incorretos.");
+            }
+        }
+
+    }
+
+    @FXML
+    private void botaoCadastrar(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Cadastro.fxml"));
+        Scene scene = new Scene(root);
+        Main.myStage.setScene(scene);
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+    }
+
+
 }

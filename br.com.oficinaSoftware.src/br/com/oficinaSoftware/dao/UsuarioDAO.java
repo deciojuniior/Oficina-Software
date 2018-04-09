@@ -35,20 +35,40 @@ public class UsuarioDAO {
 		stmt.executeUpdate();
 	}
 
-	public ResultSet buscarUsuario(String email, String senha) throws ClassNotFoundException, SQLException {
+	public String idUsuario (String email, String senha) throws ClassNotFoundException, SQLException {
+		Connection conexao = conexaoUsuario();
+		String sql = "SELECT _id FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
+		conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+		//ResultSet resultSet = stmt.executeQuery();
+		String idS;
+		idS = sql;
+		return sql;
+	}
+
+	public boolean getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
+
 		Connection conexao = conexaoUsuario();
 		String sql = "SELECT _id FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
 		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-		ResultSet resultSet = stmt.executeQuery();
-		
-		return resultSet;
+		ResultSet rs = stmt.executeQuery();
+
+		return rs.next(); // se achar algo retorna verdadeiro, senao falso
 	}
 
-	public ResultSet buscarPerfil(String _id) throws ClassNotFoundException, SQLException {
+	public Usuario buscarUsuario(String _id) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();
 		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email FROM usuario WHERE usuario._id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
-	
-		return rs;
+
+		Usuario u = new Usuario();
+		if(rs.next()) {
+			//u.set_id(rs.getString("_id"));
+			u.setNome(rs.getString("nome"));
+			u.setTelefone(rs.getString("telefone"));
+			u.setCargo(rs.getString("cargo"));
+			u.setEndereco(rs.getString("endereco"));
+			u.setEmail(rs.getString("email"));
+		}
+		return u;
 	}
 }
