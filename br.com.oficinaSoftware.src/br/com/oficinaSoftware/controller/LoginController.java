@@ -19,6 +19,8 @@ import javafx.scene.control.TextField;
 
 public class LoginController implements Initializable {
 
+    public static String idValor;
+
     @FXML
     private TextField idLogarEmail;
     @FXML
@@ -37,7 +39,8 @@ public class LoginController implements Initializable {
         if(email.length() == 0 || senha.length() == 0){
             idLogarMessage.setText("Algum dos campos está vazio.");
         }else{
-            if (dao.getValidaPraLogar(email, senha)) {
+            idValor = dao.getValidaPraLogar(email, senha) ;
+            if (idValor != null) {
                 Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
                 Scene scene = new Scene(root);
                 Main.myStage.setScene(scene);

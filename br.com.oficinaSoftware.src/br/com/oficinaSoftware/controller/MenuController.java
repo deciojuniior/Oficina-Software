@@ -30,9 +30,11 @@ public class MenuController implements Initializable {
     @FXML
     private void botaoPerfil(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
 
+        String idUser = LoginController.idValor;
+
         UsuarioDAO dao = new UsuarioDAO();
 
-        PerfilUsuarioController.USUARIO_LOGADO = dao.buscarUsuario("1");
+        PerfilUsuarioController.USUARIO_LOGADO = dao.buscarUsuario(idUser);
 
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/PerfilUsuario.fxml"));
         Scene scene = new Scene(root);
