@@ -1,8 +1,9 @@
 package br.com.oficinaSoftware.controller;
 
-import br.com.oficinaSoftware.dao.UsuarioDAO;
+import br.com.oficinaSoftware.dao.FornecedorDAO;
 import br.com.oficinaSoftware.entity.Fornecedor;
 import br.com.oficinaSoftware.resource.Main;
+import br.com.oficinaSoftware.util.TextFieldFormatter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,28 +32,43 @@ public class CadastroFornecedorController implements Initializable {
     @FXML
     private Label idMessage;
 
+    @FXML
+    private void tbCnpj(){
+        TextFieldFormatter tfC = new TextFieldFormatter();
+        tfC.setMask("##.###.###/####-##");
+        tfC.setCaracteresValidos("0123456789");
+        tfC.setTf(idCnpjFornecedor);
+        tfC.formatter();
+    }
+    @FXML
+    private  void tbTele(){
+        TextFieldFormatter tft = new TextFieldFormatter();
+        tft.setMask("(##)#####-####");
+        tft.setCaracteresValidos("0123456789");
+        tft.setTf(idTelefoneFornecedor);
+        tft.formatter();
+    }
+
 
     @FXML
     private void botaoSalvar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
-        //if(verificaSeEstaVazio()){
-           // idMessage.setText("Campos vazios.");
-        //}//else{
-                Fornecedor f = new Fornecedor();
+        if(verificaSeEstaVazio()){
+          idMessage.setText("Algum campo estar vazio.");
+        }else{
+            Fornecedor f = new Fornecedor();
 
-                f.setNomeFornecedor(idNomeFornecedor.getText());
-                f.setCnpjFornecedor(idCnpjFornecedor.getText());
-                f.setEnderecoFornecedor(idEnderecoFornecedor.getText());
-                f.setTelefoneFornecedor(idTelefoneFornecedor.getText());
-                f.setEmailFornecedor(idEmailFornecedor.getText());
-                //f.setSenha(idSenha.getText());
+            f.setNomeFornecedor(idNomeFornecedor.getText());
+            f.setCnpjFornecedor(idCnpjFornecedor.getText());
+            f.setEnderecoFornecedor(idEnderecoFornecedor.getText());
+            f.setTelefoneFornecedor(idTelefoneFornecedor.getText());
+            f.setEmailFornecedor(idEmailFornecedor.getText());
 
-                UsuarioDAO dao = new UsuarioDAO();
-                dao.salvarFornecedor(f);
-                limpaCampos();
-                //idMessage.setText("Senhas invalidas");
-           // }
 
-       // }
+            FornecedorDAO dao = new FornecedorDAO();
+            dao.salvarFornecedor(f);
+            limpaCampos();
+
+          }
     }
 
     @FXML
@@ -62,16 +78,13 @@ public class CadastroFornecedorController implements Initializable {
         Main.myStage.setScene(scene);
     }
 
-    private boolean verificaSeEstaVazio()
-    {
-
-        idNomeFornecedor.getText().isEmpty();
-        idCnpjFornecedor.getText().isEmpty();
-        idEnderecoFornecedor.getText().isEmpty();
-        idTelefoneFornecedor.getText().isEmpty();
-        idEmailFornecedor.getText().isEmpty();
-
-        return false;
+    private boolean verificaSeEstaVazio() {
+        return  idNomeFornecedor.getText().isEmpty() ||
+                idCnpjFornecedor.getText().isEmpty() ||
+                idEnderecoFornecedor.getText().isEmpty()||
+                idTelefoneFornecedor.getText().isEmpty()||
+                //idCidade.getText().isEmpty()||
+                idEmailFornecedor.getText().isEmpty();
     }
 
     private void limpaCampos() {
