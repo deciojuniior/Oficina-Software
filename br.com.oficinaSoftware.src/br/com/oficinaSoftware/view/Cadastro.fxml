@@ -1,46 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
-	minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1365"
-	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
-	fx:controller="br.com.oficinaSoftware.controller.CadastroController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1365" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.oficinaSoftware.controller.CadastroController">
 	<children>
-		<Pane layoutX="400" layoutY="150" prefHeight="403.0" prefWidth="599.0">
-			<children>
-				<TitledPane animated="false" collapsible="false" layoutX="54.0"
-					layoutY="24.0" prefHeight="342.0" prefWidth="490.0" text="Cadastro Usuario"
-					alignment="center">
+		<Pane layoutX="-0.0" layoutY="-0.0" prefHeight="700.0" prefWidth="1365.0" />
+				<TitledPane alignment="center" animated="false" collapsible="false" contentDisplay="CENTER" layoutX="400.0" layoutY="100.0" prefHeight="531.0" prefWidth="567.0" text="Cadastro Usuario" textOverrun="CENTER_WORD_ELLIPSIS">
 					<content>
-						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="769.0" prefWidth="1150.0">
+               <children>
+      				<Label layoutX="36.0" layoutY="14.0" text="Nome" />
+      				<TextField fx:id="idNome" layoutX="36.0" layoutY="30.0" prefWidth="200.0" />
+      				<Label layoutX="331.0" layoutY="17.0" text="CPF" />
+      				<TextField fx:id="idCpf" layoutX="331.0" layoutY="33.0" onKeyReleased="#tbCpf" prefWidth="200.0" promptText="XXX.XXX.XXX-XX" />
+                  <Label layoutX="36.0" layoutY="67.0" text="Data de nascimanto" />
+      				<TextField fx:id="idDataNascimento" layoutX="36.0" layoutY="83.0" onKeyReleased="#tbDate" prefWidth="200.0" promptText="DD/MM/YYYY" />
+      				<Label layoutX="331.0" layoutY="67.0" text="Endereço" />
+      				<TextField fx:id="idEndereco" layoutX="331.0" layoutY="83.0" prefWidth="200.0" />
+                  <Label layoutX="36.0" layoutY="119.0" text="Estado" />
+                  <ComboBox fx:id="btEstado" layoutX="36.0" layoutY="135.0" prefWidth="200.0" />
+                  <Label layoutX="331.0" layoutY="119.0" text="Cidade" />
+                  <ChoiceBox fx:id="btCidade" layoutX="331.0" layoutY="135.0" prefWidth="200.0" />
+      				<Label layoutX="36.0" layoutY="168.0" text="Telefone" />
+      				<TextField fx:id="idTelefone" layoutX="36.0" layoutY="184.0" onKeyReleased="#tbTelefone" prefWidth="200.0" promptText="(00)00000-0000" />
+      				<Label layoutX="331.0" layoutY="168.0" text="Cargo" />
+                  <TextField fx:id="idCargo" layoutX="331.0" layoutY="184.0" prefWidth="200.0" />
+                  <Label layoutX="36.0" layoutY="217.0" text="E-mail" />
+                  <TextField fx:id="idEmail" layoutX="36.0" layoutY="233.0" prefWidth="200.0" promptText="Controly@Controly.com" />
+      				<Label layoutX="331.0" layoutY="217.0" text="Confirma E-mail" />
+      				<TextField fx:id="idConfEmail" layoutX="331.0" layoutY="233.0" prefWidth="200.0" promptText="Controly@Controly.com" />
+      				<Label layoutX="36.0" layoutY="264.0" text="Senha" />
+      				<PasswordField fx:id="idSenha" layoutX="36.0" layoutY="280.0" prefWidth="200.0" promptText="********" />
+      				<Label layoutX="331.0" layoutY="264.0" text="Confirma Senha" />
+      				<PasswordField fx:id="idConfSenha" layoutX="331.0" layoutY="280.0" prefWidth="200.0" promptText="********" />
+                  <Label layoutX="36.0" layoutY="314.0" text="Pergunta secreta" />
+                  <TextField fx:id="idPergunta" layoutX="36.0" layoutY="330.0" prefWidth="200.0" />
+                  <Label layoutX="331.0" layoutY="314.0" text="Resposta da pergunta" />
+                  <TextField fx:id="idResposta" layoutX="331.0" layoutY="330.0" prefWidth="200.0" />
+      				<Button layoutX="351.0" layoutY="471.0" mnemonicParsing="false" onAction="#botaoCadastrar" prefWidth="200.0" text="Cadastrar" />
+      				<Button layoutX="14.0" layoutY="471.0" mnemonicParsing="false" onAction="#botaoVoltar" prefWidth="200.0" text="Voltar" />
+                  <Label fx:id="idMessage" alignment="CENTER" layoutX="31.0" layoutY="402.0" prefHeight="18.0" prefWidth="503.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Cantarell Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
 					</content>
 				</TitledPane>
-				<Label layoutX="93.0" layoutY="64.0" text="Nome"/>
-				<TextField fx:id="idNome" layoutX="93.0" layoutY="80.0" prefWidth="200.0"/>
-				<Label layoutX="312.0" layoutY="64.0" text="CPF"/>
-				<TextField fx:id="idCpf" layoutX="312.0" layoutY="80.0" prefWidth="200.0" promptText="000.000.000-00"/>
-				<Label layoutX="93.0" layoutY="117.0" text="Endereço"/>
-				<TextField fx:id="idCargo" layoutX="93.0" layoutY="133.0" prefWidth="200.0"/>
-				<Label layoutX="312.0" layoutY="117.0" text="Cargo" />
-				<TextField fx:id="idEndereco" layoutX="312.0" layoutY="133.0" prefWidth="200.0"/>
-				<Label layoutX="93.0" layoutY="168.0" text="Telefone"/>
-				<TextField fx:id="idTelefone" layoutX="93.0" layoutY="184.0" prefWidth="200.0"  promptText="(00)00000-0000"/>
-				<Label layoutX="312.0" layoutY="168.0" text="E-mail"/>
-				<TextField fx:id="idEmail" layoutX="312.0" layoutY="184.0" prefWidth="200.0"/>
-				<Label layoutX="93.0" layoutY="218.0" text="Senha"/>
-				<PasswordField fx:id="idSenha" layoutX="93.0" layoutY="234.0" prefWidth="200.0" promptText="00000000"/>
-				<Label layoutX="311.0" layoutY="218.0" text="Confirma Senha"/>
-				<PasswordField fx:id="idConfSenha" layoutX="312.0" layoutY="234.0" prefWidth="200.0" promptText="00000000"/>
-				<Button layoutX="93.0" layoutY="289.0" mnemonicParsing="false" prefWidth="200.0" text="Voltar" onAction="#botaoVoltar"/>
-				<Button layoutX="312.0" layoutY="289.0" mnemonicParsing="false"  prefWidth="200.0" text="Cadastrar" onAction="#botaoCadastrar"/>
-				<Label fx:id="idMessage" layoutX="210.0" layoutY="330.0"/>
-			</children>
-		</Pane>
 	</children>
 </AnchorPane>
