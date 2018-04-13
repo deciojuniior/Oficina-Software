@@ -23,13 +23,13 @@
                 <Label layoutX="93.0" layoutY="64.0" text="Nome" />
                 <TextField fx:id="idNomeFornecedor" layoutX="93.0" layoutY="80.0" prefWidth="200.0" />
                 <Label layoutX="312.0" layoutY="64.0" text="CNPJ" />
-                <TextField fx:id="idCnpjFornecedor" layoutX="312.0" layoutY="80.0" prefWidth="200.0" promptText="XX.XXX.XXX/XXXX-XX"/>
+                <TextField fx:id="idCnpjFornecedor" layoutX="312.0" layoutY="80.0" onKeyReleased="#tbCnpj" prefWidth="200.0" promptText="XX.XXX.XXX/XXXX-XX" />
                 <Label layoutX="93.0" layoutY="117.0" text="Endereço" />
                 <TextField fx:id="idEnderecoFornecedor" layoutX="93.0" layoutY="133.0" prefWidth="200.0" />
                 <Label layoutX="312.0" layoutY="117.0" text="Telefone" />
-                <TextField fx:id="idTelefoneFornecedor" layoutX="312.0" layoutY="133.0" prefWidth="200.0" promptText="(00)00000-0000" />
+                <TextField fx:id="idTelefoneFornecedor" layoutX="312.0" layoutY="133.0" onKeyReleased="#tbTele" prefWidth="200.0" promptText="(00)00000-0000" />
                 <Label layoutX="93.0" layoutY="168.0" text="E-mail" />
-                <TextField fx:id="idEmailFornecedor" layoutX="93.0" layoutY="184.0" prefWidth="200.0" promptText="Controly@Controly.com"/>
+                <TextField fx:id="idEmailFornecedor" layoutX="93.0" layoutY="184.0" prefWidth="200.0" promptText="Controly@Controly.com" />
                 <Label fx:id="idMessage" layoutX="210.0" layoutY="330.0" />
             </children>
         </Pane>

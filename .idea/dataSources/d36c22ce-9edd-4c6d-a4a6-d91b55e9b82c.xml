@@ -2,16 +2,16 @@
 <dataSource name="OI@localhost">
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
     <root id="1"/>
-    <database id="2" parent="1" name="OI">
-      <ObjectId>16384</ObjectId>
-      <Current>1</Current>
-      <Visible>1</Visible>
-    </database>
-    <database id="3" parent="1" name="postgres">
+    <database id="2" parent="1" name="postgres">
       <ObjectId>12413</ObjectId>
     </database>
-    <database id="4" parent="1" name="Bancodois">
+    <database id="3" parent="1" name="Bancodois">
       <ObjectId>24576</ObjectId>
+    </database>
+    <database id="4" parent="1" name="OI">
+      <ObjectId>24868</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
     </database>
     <role id="5" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
@@ -29,147 +29,147 @@
       <ConnectionLimit>-1</ConnectionLimit>
       <BypassRls>1</BypassRls>
     </role>
-    <schema id="7" parent="2" name="public">
+    <schema id="7" parent="4" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-04-13.18:49:51.174</IntrospectionTimestamp>
-      <IntrospectionStateNumber>653</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-13.20:08:57.935</IntrospectionTimestamp>
+      <IntrospectionStateNumber>734</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="8" parent="2" name="pg_catalog">
+    <schema id="8" parent="4" name="pg_catalog">
       <ObjectId>11</ObjectId>
     </schema>
-    <schema id="9" parent="2" name="pg_toast">
+    <schema id="9" parent="4" name="pg_toast">
       <ObjectId>99</ObjectId>
     </schema>
-    <schema id="10" parent="2" name="pg_temp_1">
+    <schema id="10" parent="4" name="pg_temp_1">
       <ObjectId>11848</ObjectId>
     </schema>
-    <schema id="11" parent="2" name="pg_toast_temp_1">
+    <schema id="11" parent="4" name="pg_toast_temp_1">
       <ObjectId>11849</ObjectId>
     </schema>
-    <schema id="12" parent="2" name="information_schema">
+    <schema id="12" parent="4" name="information_schema">
       <ObjectId>12125</ObjectId>
     </schema>
     <sequence id="13" parent="7" name="cidades_id_seq">
-      <ObjectId>24835</ObjectId>
-      <StateNumber>628</StateNumber>
+      <ObjectId>24875</ObjectId>
+      <StateNumber>677</StateNumber>
       <SequenceIdentity>0</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <sequence id="14" parent="7" name="estados_id_seq">
-      <ObjectId>24843</ObjectId>
-      <StateNumber>628</StateNumber>
-      <SequenceIdentity>0</SequenceIdentity>
-      <BelongsToColumn>1</BelongsToColumn>
-      <CacheSize>1</CacheSize>
-    </sequence>
-    <sequence id="15" parent="7" name="cliente__id_seq">
-      <ObjectId>16434</ObjectId>
-      <StateNumber>562</StateNumber>
+    <sequence id="14" parent="7" name="cliente__id_seq">
+      <ObjectId>24881</ObjectId>
+      <StateNumber>680</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
+    <sequence id="15" parent="7" name="estados_id_seq">
+      <ObjectId>24889</ObjectId>
+      <StateNumber>683</StateNumber>
+      <SequenceIdentity>0</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
     <sequence id="16" parent="7" name="fornecedor__id_seq">
-      <ObjectId>16420</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24895</ObjectId>
+      <StateNumber>686</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="17" parent="7" name="produto__id_seq">
-      <ObjectId>16453</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24901</ObjectId>
+      <StateNumber>689</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="18" parent="7" name="usuario__id_seq">
-      <ObjectId>16406</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24907</ObjectId>
+      <StateNumber>692</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="19" parent="7" name="venda__id_seq">
-      <ObjectId>16472</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24913</ObjectId>
+      <StateNumber>695</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
       <CacheSize>1</CacheSize>
     </sequence>
-    <table id="20" parent="7" name="cidades">
-      <ObjectId>24829</ObjectId>
-      <StateNumber>653</StateNumber>
+    <table id="20" parent="7" name="cidade">
+      <ObjectId>24869</ObjectId>
+      <StateNumber>724</StateNumber>
     </table>
     <table id="21" parent="7" name="cliente">
-      <ObjectId>16436</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24877</ObjectId>
+      <StateNumber>728</StateNumber>
     </table>
-    <table id="22" parent="7" name="estados">
-      <ObjectId>24837</ObjectId>
-      <StateNumber>628</StateNumber>
+    <table id="22" parent="7" name="estado">
+      <ObjectId>24883</ObjectId>
+      <StateNumber>724</StateNumber>
     </table>
     <table id="23" parent="7" name="fornecedor">
-      <ObjectId>16422</ObjectId>
-      <StateNumber>596</StateNumber>
+      <ObjectId>24891</ObjectId>
+      <StateNumber>726</StateNumber>
     </table>
     <table id="24" parent="7" name="produto">
-      <ObjectId>16455</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24897</ObjectId>
+      <StateNumber>730</StateNumber>
     </table>
     <table id="25" parent="7" name="usuario">
-      <ObjectId>16408</ObjectId>
-      <StateNumber>653</StateNumber>
+      <ObjectId>24903</ObjectId>
+      <StateNumber>734</StateNumber>
     </table>
     <table id="26" parent="7" name="venda">
-      <ObjectId>16474</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24909</ObjectId>
+      <StateNumber>731</StateNumber>
     </table>
     <table id="27" parent="7" name="venda_produto">
-      <ObjectId>16491</ObjectId>
-      <StateNumber>562</StateNumber>
+      <ObjectId>24915</ObjectId>
+      <StateNumber>731</StateNumber>
     </table>
     <column id="28" parent="20" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>628</StateNumber>
-      <DefaultExpression>nextval(&apos;cidades_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>698</StateNumber>
+      <DefaultExpression>nextval(&apos;public.cidades_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>cidades_id_seq</SequenceName>
     </column>
     <column id="29" parent="20" name="nome">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>628</StateNumber>
+      <StateNumber>676</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="30" parent="20" name="estado_id">
-      <Position>4</Position>
+      <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>628</StateNumber>
+      <StateNumber>676</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="31" parent="20" name="pk_cidade_id">
-      <ObjectId>24847</ObjectId>
+      <ObjectId>24929</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="32" parent="20" name="pk_cidade_id">
-      <ObjectId>24848</ObjectId>
+      <ObjectId>24930</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_cidade_id</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="33" parent="20" name="fk_estado_id">
-      <ObjectId>24851</ObjectId>
+      <ObjectId>24949</ObjectId>
       <ColNames>estado_id</ColNames>
-      <RefTableId>24837</RefTableId>
+      <RefTableId>24883</RefTableId>
       <RefColPositions>1</RefColPositions>
-      <RefTableName>estados</RefTableName>
+      <RefTableName>estado</RefTableName>
       <RefKeyName>pk_estados_id</RefKeyName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
@@ -178,57 +178,57 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
-      <DefaultExpression>nextval(&apos;cliente__id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>699</StateNumber>
+      <DefaultExpression>nextval(&apos;public.cliente__id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>cliente__id_seq</SequenceName>
     </column>
     <column id="35" parent="21" name="nome">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>679</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="36" parent="21" name="telefone">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>679</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="37" parent="21" name="_idusuario">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>679</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="38" parent="21" name="_idcidade">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>679</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="39" parent="21" name="deletado">
       <Position>6</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>679</StateNumber>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
     <index id="40" parent="21" name="cliente_pkey">
-      <ObjectId>16441</ObjectId>
+      <ObjectId>24925</ObjectId>
       <ColNames>_id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="41" parent="21" name="cliente_pkey">
-      <ObjectId>16442</ObjectId>
+      <ObjectId>24926</ObjectId>
       <ColNames>_id</ColNames>
       <UnderlyingIndexName>cliente_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <foreign-key id="42" parent="21" name="cliente__idusuario_fkey">
-      <ObjectId>16443</ObjectId>
+      <ObjectId>24939</ObjectId>
       <ColNames>_idusuario</ColNames>
-      <RefTableId>16408</RefTableId>
+      <RefTableId>24903</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
@@ -238,366 +238,386 @@
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>628</StateNumber>
-      <DefaultExpression>nextval(&apos;estados_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>700</StateNumber>
+      <DefaultExpression>nextval(&apos;public.estados_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>estados_id_seq</SequenceName>
     </column>
     <column id="44" parent="22" name="nome">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
-      <StateNumber>628</StateNumber>
+      <StateNumber>682</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="45" parent="22" name="pk_estados_id">
-      <ObjectId>24849</ObjectId>
+    <column id="45" parent="22" name="uf">
+      <Position>3</Position>
+      <DataType>varchar(2)|0s</DataType>
+      <StateNumber>682</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="46" parent="22" name="pk_estados_id">
+      <ObjectId>24931</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="46" parent="22" name="pk_estados_id">
-      <ObjectId>24850</ObjectId>
+    <key id="47" parent="22" name="pk_estados_id">
+      <ObjectId>24932</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>pk_estados_id</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="47" parent="23" name="_id">
+    <column id="48" parent="23" name="_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
-      <DefaultExpression>nextval(&apos;fornecedor__id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>701</StateNumber>
+      <DefaultExpression>nextval(&apos;public.fornecedor__id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>fornecedor__id_seq</SequenceName>
     </column>
-    <column id="48" parent="23" name="nome">
+    <column id="49" parent="23" name="nome">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="49" parent="23" name="telefone">
+    <column id="50" parent="23" name="telefone">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="50" parent="23" name="endereco">
+    <column id="51" parent="23" name="endereco">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="51" parent="23" name="_idusuario">
+    <column id="52" parent="23" name="_idusuario">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="52" parent="23" name="deletado">
+    <column id="53" parent="23" name="deletado">
       <Position>6</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>685</StateNumber>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <column id="53" parent="23" name="cnpj">
-      <Position>9</Position>
+    <column id="54" parent="23" name="cnpj">
+      <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>596</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="54" parent="23" name="email">
-      <Position>10</Position>
+    <column id="55" parent="23" name="email">
+      <Position>8</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>596</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="55" parent="23" name="fornecedor_pkey">
-      <ObjectId>16427</ObjectId>
+    <index id="56" parent="23" name="fornecedor_pkey">
+      <ObjectId>24927</ObjectId>
       <ColNames>_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="56" parent="23" name="fornecedor_pkey">
-      <ObjectId>16428</ObjectId>
+    <key id="57" parent="23" name="fornecedor_pkey">
+      <ObjectId>24928</ObjectId>
       <ColNames>_id</ColNames>
       <UnderlyingIndexName>fornecedor_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="57" parent="23" name="fornecedor__idusuario_fkey">
-      <ObjectId>16429</ObjectId>
+    <foreign-key id="58" parent="23" name="fornecedor__idusuario_fkey">
+      <ObjectId>24954</ObjectId>
       <ColNames>_idusuario</ColNames>
-      <RefTableId>16408</RefTableId>
+      <RefTableId>24903</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <column id="58" parent="24" name="_id">
+    <column id="59" parent="24" name="_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
-      <DefaultExpression>nextval(&apos;produto__id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>702</StateNumber>
+      <DefaultExpression>nextval(&apos;public.produto__id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>produto__id_seq</SequenceName>
     </column>
-    <column id="59" parent="24" name="nome">
+    <column id="60" parent="24" name="nome">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="60" parent="24" name="quantidade">
+    <column id="61" parent="24" name="quantidade">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="61" parent="24" name="preco">
+    <column id="62" parent="24" name="preco">
       <Position>4</Position>
       <DataType>double precision|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="62" parent="24" name="_idusuario">
+    <column id="63" parent="24" name="_idusuario">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="63" parent="24" name="_idfornecedor">
+    <column id="64" parent="24" name="_idfornecedor">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="64" parent="24" name="deletado">
+    <column id="65" parent="24" name="deletado">
       <Position>7</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>688</StateNumber>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <index id="65" parent="24" name="produto_pkey">
-      <ObjectId>16460</ObjectId>
+    <index id="66" parent="24" name="produto_pkey">
+      <ObjectId>24933</ObjectId>
       <ColNames>_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="66" parent="24" name="produto_pkey">
-      <ObjectId>16461</ObjectId>
+    <key id="67" parent="24" name="produto_pkey">
+      <ObjectId>24934</ObjectId>
       <ColNames>_id</ColNames>
       <UnderlyingIndexName>produto_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="67" parent="24" name="produto__idusuario_fkey">
-      <ObjectId>16462</ObjectId>
+    <foreign-key id="68" parent="24" name="produto__idusuario_fkey">
+      <ObjectId>24964</ObjectId>
       <ColNames>_idusuario</ColNames>
-      <RefTableId>16408</RefTableId>
+      <RefTableId>24903</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <foreign-key id="68" parent="24" name="produto__idfornecedor_fkey">
-      <ObjectId>16467</ObjectId>
+    <foreign-key id="69" parent="24" name="produto__idfornecedor_fkey">
+      <ObjectId>24959</ObjectId>
       <ColNames>_idfornecedor</ColNames>
-      <RefTableId>16422</RefTableId>
+      <RefTableId>24891</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>fornecedor</RefTableName>
       <RefKeyName>fornecedor_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <column id="69" parent="25" name="_id">
+    <column id="70" parent="25" name="_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
-      <DefaultExpression>nextval(&apos;usuario__id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>703</StateNumber>
+      <DefaultExpression>nextval(&apos;public.usuario__id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>usuario__id_seq</SequenceName>
     </column>
-    <column id="70" parent="25" name="cpf">
+    <column id="71" parent="25" name="cpf">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="25" name="nome">
+    <column id="72" parent="25" name="nome">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="72" parent="25" name="endereco">
+    <column id="73" parent="25" name="endereco">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="73" parent="25" name="telefone">
+    <column id="74" parent="25" name="telefone">
       <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="74" parent="25" name="cargo">
+    <column id="75" parent="25" name="cargo">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="75" parent="25" name="email">
+    <column id="76" parent="25" name="email">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="76" parent="25" name="senha">
+    <column id="77" parent="25" name="senha">
       <Position>8</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="77" parent="25" name="ativo">
-      <Position>10</Position>
+    <column id="78" parent="25" name="ativo">
+      <Position>9</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>691</StateNumber>
       <DefaultExpression>true</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <column id="78" parent="25" name="resposta">
-      <Position>11</Position>
+    <column id="79" parent="25" name="resposta">
+      <Position>10</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>607</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="25" name="datanascimento">
-      <Position>12</Position>
+    <column id="80" parent="25" name="datanascimento">
+      <Position>11</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>607</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="80" parent="25" name="pergunta">
-      <Position>14</Position>
+    <column id="81" parent="25" name="pergunta">
+      <Position>12</Position>
       <DataType>varchar(50)|0s</DataType>
-      <StateNumber>610</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="81" parent="25" name="_idcidade">
-      <Position>16</Position>
+    <column id="82" parent="25" name="_idcidade">
+      <Position>13</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>653</StateNumber>
+      <StateNumber>691</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="82" parent="25" name="usuario_pkey">
-      <ObjectId>16413</ObjectId>
+    <column id="83" parent="25" name="datacadastro">
+      <Position>14</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>733</StateNumber>
+      <DefaultExpression>(&apos;now&apos;::text)::date</DefaultExpression>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="84" parent="25" name="dataatualizacao">
+      <Position>15</Position>
+      <DataType>date|0s</DataType>
+      <StateNumber>734</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <index id="85" parent="25" name="usuario_pkey">
+      <ObjectId>24935</ObjectId>
       <ColNames>_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="83" parent="25" name="usuario_pkey">
-      <ObjectId>16414</ObjectId>
+    <key id="86" parent="25" name="usuario_pkey">
+      <ObjectId>24936</ObjectId>
       <ColNames>_id</ColNames>
       <UnderlyingIndexName>usuario_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="84" parent="25" name="fk__idcidade">
-      <ObjectId>24863</ObjectId>
+    <foreign-key id="87" parent="25" name="fk__idcidade">
+      <ObjectId>24944</ObjectId>
       <ColNames>_idcidade</ColNames>
-      <RefTableId>24829</RefTableId>
+      <RefTableId>24869</RefTableId>
       <RefColPositions>1</RefColPositions>
-      <RefTableName>cidades</RefTableName>
+      <RefTableName>cidade</RefTableName>
       <RefKeyName>pk_cidade_id</RefKeyName>
       <RefColNames>id</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="85" parent="26" name="_id">
+    <column id="88" parent="26" name="_id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>562</StateNumber>
-      <DefaultExpression>nextval(&apos;venda__id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>704</StateNumber>
+      <DefaultExpression>nextval(&apos;public.venda__id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
       <SequenceName>venda__id_seq</SequenceName>
     </column>
-    <column id="86" parent="26" name="data">
+    <column id="89" parent="26" name="data">
       <Position>2</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>694</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="87" parent="26" name="_idcliente">
+    <column id="90" parent="26" name="_idcliente">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>694</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="88" parent="26" name="_idusuario">
+    <column id="91" parent="26" name="_idusuario">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>694</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="89" parent="26" name="deletado">
+    <column id="92" parent="26" name="deletado">
       <Position>5</Position>
       <DataType>boolean|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>694</StateNumber>
       <DefaultExpression>false</DefaultExpression>
       <TypeId>16</TypeId>
     </column>
-    <index id="90" parent="26" name="venda_pkey">
-      <ObjectId>16479</ObjectId>
+    <index id="93" parent="26" name="venda_pkey">
+      <ObjectId>24937</ObjectId>
       <ColNames>_id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="91" parent="26" name="venda_pkey">
-      <ObjectId>16480</ObjectId>
+    <key id="94" parent="26" name="venda_pkey">
+      <ObjectId>24938</ObjectId>
       <ColNames>_id</ColNames>
       <UnderlyingIndexName>venda_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="92" parent="26" name="venda__idcliente_fkey">
-      <ObjectId>16486</ObjectId>
+    <foreign-key id="95" parent="26" name="venda__idcliente_fkey">
+      <ObjectId>24969</ObjectId>
       <ColNames>_idcliente</ColNames>
-      <RefTableId>16436</RefTableId>
+      <RefTableId>24877</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>cliente</RefTableName>
       <RefKeyName>cliente_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <foreign-key id="93" parent="26" name="venda__idusuario_fkey">
-      <ObjectId>16481</ObjectId>
+    <foreign-key id="96" parent="26" name="venda__idusuario_fkey">
+      <ObjectId>24974</ObjectId>
       <ColNames>_idusuario</ColNames>
-      <RefTableId>16408</RefTableId>
+      <RefTableId>24903</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>usuario</RefTableName>
       <RefKeyName>usuario_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <column id="94" parent="27" name="_idproduto">
+    <column id="97" parent="27" name="_idproduto">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>697</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="95" parent="27" name="_idvenda">
+    <column id="98" parent="27" name="_idvenda">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>562</StateNumber>
+      <StateNumber>697</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="96" parent="27" name="venda_produto__idproduto_fkey">
-      <ObjectId>16494</ObjectId>
+    <foreign-key id="99" parent="27" name="venda_produto__idproduto_fkey">
+      <ObjectId>24979</ObjectId>
       <ColNames>_idproduto</ColNames>
-      <RefTableId>16455</RefTableId>
+      <RefTableId>24897</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>produto</RefTableName>
       <RefKeyName>produto_pkey</RefKeyName>
       <RefColNames>_id</RefColNames>
     </foreign-key>
-    <foreign-key id="97" parent="27" name="venda_produto__idvenda_fkey">
-      <ObjectId>16499</ObjectId>
+    <foreign-key id="100" parent="27" name="venda_produto__idvenda_fkey">
+      <ObjectId>24984</ObjectId>
       <ColNames>_idvenda</ColNames>
-      <RefTableId>16474</RefTableId>
+      <RefTableId>24909</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>venda</RefTableName>
       <RefKeyName>venda_pkey</RefKeyName>

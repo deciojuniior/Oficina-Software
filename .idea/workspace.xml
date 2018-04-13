@@ -2,26 +2,18 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" line="10" />
-    <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" line="93" />
-    <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" line="52" />
+    <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" line="80" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b086d18a-8af7-4915-9a45-ce6190417dac" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/matheus.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Fornecedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/FornecedorDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,30 +34,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="OI@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="OI@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="OI@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="OI: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="OI@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="OI: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -73,32 +42,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CadastroController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
+      <file leaf-file-name="FornecedorDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/FornecedorDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="200" column="49" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
+            <state relative-caret-position="448">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PerfilUsuarioController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -140,16 +91,18 @@
         <option value="d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/fornecedor.sql" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Fornecedor.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UsuarioController.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Menu.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/util/TextFieldFormatter.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/FornecedorDAO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/console_1.sql" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" />
       </list>
     </option>
   </component>
@@ -165,7 +118,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="960" />
     <option name="y" value="27" />
     <option name="width" value="960" />
@@ -175,7 +128,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages ProjectPane="true" />
       <showMembers ProjectPane="true" />
       <abbreviatePackageNames ProjectPane="true" />
@@ -185,6 +138,155 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="ClassNotFoundException" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="fxml" type="462c0819:PsiDirectoryNode" />
+              <item name="Initializable" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="PreparedStatement" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="ResultSet" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="SQLException" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-excluded-files" value="false" />
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -201,19 +303,7 @@
               <item name="Oficina-Software" type="58d84e3e:PackageViewProjectNode" />
               <item name="Oficina-Software" type="616d4139:PackageViewModuleNode" />
               <item name="br.c.o.controller" type="1f31426a:PackageElementNode" />
-              <item name="CadastroController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Oficina-Software" type="616d4139:PackageViewModuleNode" />
-              <item name="br.c.o.controller" type="1f31426a:PackageElementNode" />
-              <item name="LoginController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Oficina-Software" type="616d4139:PackageViewModuleNode" />
-              <item name="br.c.o.controller" type="1f31426a:PackageElementNode" />
-              <item name="PerfilUsuarioController" type="1a9f42e2:ClassTreeNode" />
+              <item name="CadastroFornecedorController" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="58d84e3e:PackageViewProjectNode" />
@@ -335,157 +425,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="UsuarioDAO" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-              <item name="PerfilUsuario" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassNotFoundException" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="javafx.fxml" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-              <item name="Initializable" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-              <item name="PreparedStatement" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-              <item name="ResultSet" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.sql" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-              <item name="SQLException" type="1a9f42e2:ClassTreeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-excluded-files" value="false" />
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -634,11 +573,12 @@
       <workItem from="1523645174531" duration="4301000" />
       <workItem from="1523649514363" duration="3047000" />
       <workItem from="1523655614499" duration="2071000" />
+      <workItem from="1523658509166" duration="2532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121871000" />
+    <option name="totallyTimeSpent" value="124403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,9 +606,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.19603524" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32929516" />
       <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.32929516" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.1736111" />
-      <window_info anchor="right" id="Database" order="1" weight="0.32959402" />
+      <window_info active="true" content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.17574786" />
+      <window_info anchor="right" id="Database" order="1" visible="true" weight="0.16559829" />
       <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -678,7 +619,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2863436" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32929516" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -759,23 +699,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="128" column="36" lean-forward="true" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.graphics/com/sun/glass/ui/gtk/GtkApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -896,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -945,54 +861,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/fornecedor">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Fornecedor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/util/TextFieldFormatter.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1004,17 +878,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="41" column="123" selection-start-line="41" selection-start-column="123" selection-end-line="41" selection-end-column="123" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="597">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
@@ -1026,10 +892,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Fornecedor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="200" column="49" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="49" />
+        <state relative-caret-position="1109">
+          <caret line="139" column="15" selection-start-line="139" selection-start-column="15" selection-end-line="139" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="99" selection-start-line="18" selection-start-column="99" selection-end-line="18" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/fornecedor">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/FornecedorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

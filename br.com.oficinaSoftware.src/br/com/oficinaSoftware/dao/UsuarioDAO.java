@@ -48,19 +48,6 @@ public class UsuarioDAO {
         stmt.executeUpdate();
 	}
 
-	public void salvarFornecedor(Fornecedor fornecedor) throws ClassNotFoundException, SQLException {
-		Connection conexao = conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Fornecedor(nome,telefone,endereco, _idusuario,cnpj,email)VALUES (?, ?, ?, ?, ?, ?)");
-		String idUserF = LoginController.idValor;
-		stmt.setString(1, fornecedor.getNomeFornecedor());
-		stmt.setString(2, fornecedor.getTelefoneFornecedor());
-		stmt.setString(3, fornecedor.getEnderecoFornecedor());
-		stmt.setInt(4, Integer.valueOf(idUserF));
-		stmt.setString(5, fornecedor.getCnpjFornecedor());
-		stmt.setString(6, fornecedor.getEmailFornecedor());
-
-		stmt.executeUpdate();
-	}
 
 	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();

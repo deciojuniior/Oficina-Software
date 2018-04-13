@@ -184,10 +184,6 @@ public class CadastroController implements Initializable {
 
     private void listeners() {
 
-
-
-
-
         //========================CAIXA senha===========================
         idSenha.textProperty().addListener((observable, oldValue, newValue) ->{
             if(newValue.length() > oldValue.length()){
