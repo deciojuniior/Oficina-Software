@@ -5,8 +5,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
+import br.com.oficinaSoftware.controller.LoginController;
 import br.com.oficinaSoftware.entity.Usuario;
+import br.com.oficinaSoftware.entity.Fornecedor;
 
 public class UsuarioDAO {
 
@@ -21,9 +26,10 @@ public class UsuarioDAO {
         return conexao;
 	}
 
-	public void salvarUsuario(Usuario usuario) throws ClassNotFoundException, SQLException {
+	public void salvarUsuario(Usuario usuario) throws ClassNotFoundException, SQLException, ParseException {
 		Connection conexao = conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome,cpf,endereco,cargo,telefone,email,senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
+		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome,cpf,cargo, endereco,telefone,email,senha,pergunta,resposta,_idcidade,datanascimento) " +
+				"VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		stmt.setString(1, usuario.getNome());
 		stmt.setString(2, usuario.getCpf());
 		stmt.setString(3, usuario.getCargo());
@@ -31,26 +37,30 @@ public class UsuarioDAO {
 		stmt.setString(5, usuario.getTelefone());
 		stmt.setString(6, usuario.getEmail());
 		stmt.setString(7, usuario.getSenha());
+		stmt.setString(8, usuario.getPergunta());
+		stmt.setString(9, usuario.getResposta());
+		stmt.setInt(10, Integer.parseInt("1"));
+		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
+		java.util.Date date = data.parse(usuario.getDataNasc());
+		SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
+		stmt.setDate(11, Date.valueOf(dt1.format(date)));
+
+        stmt.executeUpdate();
+	}
+
+	public void salvarFornecedor(Fornecedor fornecedor) throws ClassNotFoundException, SQLException {
+		Connection conexao = conexaoUsuario();
+		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Fornecedor(nome,telefone,endereco, _idusuario,cnpj,email)VALUES (?, ?, ?, ?, ?, ?)");
+		String idUserF = LoginController.idValor;
+		stmt.setString(1, fornecedor.getNomeFornecedor());
+		stmt.setString(2, fornecedor.getTelefoneFornecedor());
+		stmt.setString(3, fornecedor.getEnderecoFornecedor());
+		stmt.setInt(4, Integer.valueOf(idUserF));
+		stmt.setString(5, fornecedor.getCnpjFornecedor());
+		stmt.setString(6, fornecedor.getEmailFornecedor());
 
 		stmt.executeUpdate();
 	}
-
-	/*public String idUsuario (String email, String senha) throws ClassNotFoundException, SQLException {
-		Connection conexao = conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("SELECT _id FROM usuario WHERE usuario.email= \'" +email+ "\'AND usuario.senha =\'" +senha+"\';");
-		ResultSet rs = stmt.executeQuery();
-
-		String u = new String();
-		if(rs.next()) {
-			u..rs.getString("_id"));
-			u.setNome(rs.getString("nome"));
-			u.setTelefone(rs.getString("telefone"));
-			u.setCargo(rs.getString("cargo"));
-			u.setEndereco(rs.getString("endereco"));
-			u.setEmail(rs.getString("email"));
-		}
-		return sql;
-	}*/
 
 	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();
@@ -61,22 +71,22 @@ public class UsuarioDAO {
 		if (rs.next()){
 			valor = rs.getString("_id");
 		}
-		return valor; // se achar algo retorna verdadeiro, senao falso
+		return valor; // retorna ID do usuario
 	}
 
 	public Usuario buscarUsuario(String _id) throws ClassNotFoundException, SQLException {
 		Connection conexao = conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email FROM usuario WHERE usuario._id= \'" + _id + "\';");
+		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email,datanascimento FROM usuario WHERE usuario._id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
 
 		Usuario u = new Usuario();
 		if(rs.next()) {
-			//u.set_id(rs.getString("_id"));
 			u.setNome(rs.getString("nome"));
 			u.setTelefone(rs.getString("telefone"));
 			u.setCargo(rs.getString("cargo"));
 			u.setEndereco(rs.getString("endereco"));
 			u.setEmail(rs.getString("email"));
+			u.setDataNasc(String.valueOf(rs.getDate("datanascimento")));
 		}
 		return u;
 	}

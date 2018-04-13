@@ -11,7 +11,8 @@
 			<children>
 				<TitledPane alignment="center" animated="false" collapsible="false" layoutX="54.0" layoutY="24.0" prefHeight="342.0" prefWidth="490.0" text="Menu" />
 					<Button layoutX="495.0" layoutY="55.0" mnemonicParsing="false" onAction="#botaoSair" text="Sair" />
-            <Button fx:id="idPerfilUsuario" layoutX="60.0" layoutY="55.0" mnemonicParsing="false" text="Perfil" onAction="#botaoPerfil"/>
+            <Button fx:id="idPerfilUsuario" layoutX="60.0" layoutY="55.0" mnemonicParsing="false" onAction="#botaoPerfil" text="Perfil" />
+            <Button fx:id="btCasdForn" layoutX="110.0" layoutY="55.0" mnemonicParsing="false" onAction="#botaoCadastroForncedor" text="Cadastra Fornecedor" />
 			</children>
 		</Pane>
 	</children>

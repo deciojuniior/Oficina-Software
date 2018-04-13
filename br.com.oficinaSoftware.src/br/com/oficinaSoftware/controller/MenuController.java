@@ -39,8 +39,15 @@ public class MenuController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/PerfilUsuario.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
+    }
 
-
+    @FXML
+    private void botaoCadastroForncedor (ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/CadastroFornecedor.fxml"));
+        Scene scene = new Scene(root);
+        Main.myStage.setScene(scene);
 
     }
+
 }
+
