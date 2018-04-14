@@ -26,6 +26,19 @@ public class UsuarioDAO {
         return conexao;
 	}
 
+	public String buscarSenhar(String per, String res) throws  ClassNotFoundException,SQLException,ParseException {
+		Connection conexao = conexaoUsuario();
+		String sql = "select senha from usuario WHERE pergunta = \'"+per+"\' and resposta = \'"+res+"\';";
+		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+		ResultSet rs = stmt.executeQuery();
+		String valor = null;
+		if (rs.next()){
+			valor = rs.getString("senha");
+		}
+		return valor;
+
+	}
+
 	public void salvarUsuario(Usuario usuario) throws ClassNotFoundException, SQLException, ParseException {
 		Connection conexao = conexaoUsuario();
 		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome,cpf,cargo, endereco,telefone,email,senha,pergunta,resposta,_idcidade,datanascimento) " +
