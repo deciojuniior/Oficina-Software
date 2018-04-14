@@ -8,10 +8,7 @@ import java.sql.SQLException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
-import br.com.oficinaSoftware.controller.LoginController;
 import br.com.oficinaSoftware.entity.Usuario;
-import br.com.oficinaSoftware.entity.Fornecedor;
 
 public class UsuarioDAO {
 
