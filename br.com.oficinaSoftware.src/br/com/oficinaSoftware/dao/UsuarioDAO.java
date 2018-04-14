@@ -1,7 +1,6 @@
 package br.com.oficinaSoftware.dao;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,20 +10,11 @@ import java.text.SimpleDateFormat;
 import br.com.oficinaSoftware.entity.Usuario;
 
 public class UsuarioDAO {
-
-	private Connection conexaoUsuario() throws SQLException, ClassNotFoundException {
-		String url ="jdbc:postgresql://localhost:5432/OI";
-        String usuario="postgres";
-        String senha = "postgres";
-
-        Class.forName("org.postgresql.Driver");
-        Connection conexao = DriverManager.getConnection(url,usuario,senha);
-
-        return conexao;
-	}
+	
+	DAO dao = new DAO();
 
 	public String buscarSenhar(String per, String res) throws  ClassNotFoundException,SQLException,ParseException {
-		Connection conexao = conexaoUsuario();
+		Connection conexao = dao.conexaoUsuario();
 		String sql = "select senha from usuario WHERE pergunta = \'"+per+"\' and resposta = \'"+res+"\';";
 		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		ResultSet rs = stmt.executeQuery();
@@ -37,7 +27,7 @@ public class UsuarioDAO {
 	}
 
 	public void salvarUsuario(Usuario usuario) throws ClassNotFoundException, SQLException, ParseException {
-		Connection conexao = conexaoUsuario();
+		Connection conexao = dao.conexaoUsuario();
 		PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Usuario(nome,cpf,cargo, endereco,telefone,email,senha,pergunta,resposta,_idcidade,datanascimento) " +
 				"VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		stmt.setString(1, usuario.getNome());
@@ -60,7 +50,7 @@ public class UsuarioDAO {
 
 
 	public String getValidaPraLogar(String email, String senha) throws ClassNotFoundException, SQLException {
-		Connection conexao = conexaoUsuario();
+		Connection conexao = dao.conexaoUsuario();
 		String sql = "SELECT _id FROM usuario WHERE usuario.email= \'"+email+"\'AND usuario.senha =\'"+senha+"\';";
 		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		ResultSet rs = stmt.executeQuery();
@@ -72,7 +62,7 @@ public class UsuarioDAO {
 	}
 
 	public Usuario buscarUsuario(String _id) throws ClassNotFoundException, SQLException {
-		Connection conexao = conexaoUsuario();
+		Connection conexao = dao.conexaoUsuario();
 		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email,datanascimento FROM usuario WHERE usuario._id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
 

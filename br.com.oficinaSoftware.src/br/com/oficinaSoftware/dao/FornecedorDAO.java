@@ -4,25 +4,15 @@ import br.com.oficinaSoftware.controller.LoginController;
 import br.com.oficinaSoftware.entity.Fornecedor;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class FornecedorDAO {
 
-    private Connection conexaoUsuario() throws SQLException, ClassNotFoundException {
-        String url ="jdbc:postgresql://localhost:5432/OI";
-        String usuario="postgres";
-        String senha = "postgres";
-
-        Class.forName("org.postgresql.Driver");
-        Connection conexao = DriverManager.getConnection(url,usuario,senha);
-
-        return conexao;
-    }
+	DAO dao = new DAO();
 
     public void salvarFornecedor(Fornecedor fornecedor) throws ClassNotFoundException, SQLException {
-        Connection conexao = conexaoUsuario();
+        Connection conexao = dao.conexaoUsuario();
         PreparedStatement stmt = conexao.prepareStatement("INSERT INTO Fornecedor(nome,telefone,endereco, _idusuario,cnpj,email)VALUES (?, ?, ?, ?, ?, ?)");
         String idUserF = LoginController.idValor;
         stmt.setString(1, fornecedor.getNomeFornecedor());

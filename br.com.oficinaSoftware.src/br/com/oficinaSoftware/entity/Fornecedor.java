@@ -1,7 +1,7 @@
 package br.com.oficinaSoftware.entity;
 
 public class Fornecedor {
-    private String _idFornecedor;
+    private String _id;
     private String nomeFornecedor;
     private String cnpjFornecedor;
     private String enderecoFornecedor;
@@ -9,8 +9,8 @@ public class Fornecedor {
     private String _idUsuario;
     private String telefoneFornecedor;
 
-    public String get_idFornecedor() { return _idFornecedor; }
-    public void set_idFornecedor(String _idFornecedor) { this._idFornecedor = _idFornecedor; }
+    public String get_id() { return _id; }
+    public void set_id(String _id) { this._id = _id; }
     public String getNomeFornecedor() { return nomeFornecedor; }
     public void setNomeFornecedor(String nomeFornecedor) { this.nomeFornecedor = nomeFornecedor; }
     public String getCnpjFornecedor() { return cnpjFornecedor; }
@@ -27,7 +27,7 @@ public class Fornecedor {
     @Override
     public String toString() {
         return "Fornecedor{" +
-                "_idFornecedor=" + _idFornecedor +
+                "_id=" + _id +
                 ", nomeFornecedor='" + nomeFornecedor + '\'' +
                 ", cnpjFornecedor=" + cnpjFornecedor +
                 ", enderecoFornecedor='" + enderecoFornecedor + '\'' +
