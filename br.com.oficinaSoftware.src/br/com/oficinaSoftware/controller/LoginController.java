@@ -52,6 +52,14 @@ public class LoginController implements Initializable {
     }
 
     @FXML
+    private void recupereSenha(ActionEvent event) throws  IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Pergunta.fxml"));
+        Scene scene = new Scene(root);
+        Main.myStage.setScene(scene);
+
+    }
+
+    @FXML
     private void botaoCadastrar(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Cadastro.fxml"));
         Scene scene = new Scene(root);

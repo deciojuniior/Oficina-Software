@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
@@ -17,6 +18,7 @@
 						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>	
             				<Label fx:id="idLogarMessage" alignment="center" layoutX="119.0" layoutY="244.0" prefHeight="16.0" prefWidth="250.0" textAlignment="CENTER" />
+                        <Hyperlink alignment="CENTER" layoutX="176.0" layoutY="211.0" onAction="#recupereSenha" text="Esqueceu a senha?" textAlignment="CENTER" />
                      </children></AnchorPane>
 					</content>
 				</TitledPane>
