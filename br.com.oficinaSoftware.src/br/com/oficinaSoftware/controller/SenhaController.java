@@ -15,7 +15,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 
 
-public class SenhaControlle implements Initializable {
+public class SenhaController implements Initializable {
     @FXML
     private Label idMensagem;
 
@@ -27,7 +27,7 @@ public class SenhaControlle implements Initializable {
     }
 
     public void setMensagem(){
-        idMensagem.setText(PerguntaControlle.senhaUser);
+        idMensagem.setText(PerguntaController.senhaUser);
     }
 
 

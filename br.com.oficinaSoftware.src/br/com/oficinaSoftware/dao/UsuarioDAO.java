@@ -80,4 +80,14 @@ public class UsuarioDAO {
 		return u;
 	}
 
+	public void updateUsuario(String _id, Usuario u) throws ClassNotFoundException, SQLException {
+		Connection conexao = dao.conexaoUsuario();
+		PreparedStatement stmt = conexao.prepareStatement("UPDATE usuario SET nome =\'" + u.getNome() + "\',cpf =\'" + u.getCpf() + "\',cargo =\'" + u.getCargo() + "\', endereco =\'" + u.getEndereco() + "\', " +
+				"telefone =\'" + u.getTelefone() + "\',email =\'" + u.getEmail() + "\'," +
+				"senha\'" + u.getSenha() + "\',pergunta =\'" + u.getPergunta() + "\',resposta =\'" + u.get_id() + "\' WHERE _id = \'" + _id + "\';");
+		ResultSet rs = stmt.executeQuery();
+
+
+	}
+
 }

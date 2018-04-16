@@ -17,7 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class PerguntaControlle implements Initializable {
+public class PerguntaController implements Initializable {
 
     public static String senhaUser;
 
@@ -61,4 +61,6 @@ public class PerguntaControlle implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
+
 }

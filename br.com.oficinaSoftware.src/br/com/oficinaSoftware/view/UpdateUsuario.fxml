@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1365" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.oficinaSoftware.controller.UpdateUsuarioController">
+    <children>
+        <Pane layoutX="-0.0" layoutY="-0.0" prefHeight="700.0" prefWidth="1365.0" />
+        <TitledPane alignment="center" animated="false" collapsible="false" contentDisplay="CENTER" layoutX="400.0" layoutY="100.0" prefHeight="531.0" prefWidth="567.0" text="Alterar Usuario" textOverrun="CENTER_WORD_ELLIPSIS">
+            <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="769.0" prefWidth="1150.0">
+                    <children>
+                        <Label layoutX="36.0" layoutY="14.0" text="Nome" />
+                        <TextField fx:id="idNomeUp" layoutX="36.0" layoutY="30.0" prefWidth="200.0" />
+                        <Label layoutX="331.0" layoutY="17.0" text="CPF" />
+                        <TextField fx:id="idCpfUp" layoutX="331.0" layoutY="33.0" onKeyReleased="#tbCpf" prefWidth="200.0" promptText="XXX.XXX.XXX-XX" />
+                        <Label layoutX="36.0" layoutY="67.0" text="Data de nascimanto" />
+                        <TextField fx:id="idDataNascimentoUp" layoutX="36.0" layoutY="83.0" onKeyReleased="#tbDate" prefWidth="200.0" promptText="DD/MM/YYYY" />
+                        <Label layoutX="331.0" layoutY="67.0" text="Endereço" />
+                        <TextField fx:id="idEnderecoUp" layoutX="331.0" layoutY="83.0" prefWidth="200.0" />
+                        <Label layoutX="36.0" layoutY="119.0" text="Estado" />
+                        <ComboBox fx:id="btEstadoUp" layoutX="36.0" layoutY="135.0" prefWidth="200.0" />
+                        <Label layoutX="331.0" layoutY="119.0" text="Cidade" />
+                        <ChoiceBox fx:id="btCidadeUp" layoutX="331.0" layoutY="135.0" prefWidth="200.0" />
+                        <Label layoutX="36.0" layoutY="168.0" text="Telefone" />
+                        <TextField fx:id="idTelefoneUp" layoutX="36.0" layoutY="184.0" onKeyReleased="#tbTelefone" prefWidth="200.0" promptText="(00)00000-0000" />
+                        <Label layoutX="331.0" layoutY="168.0" text="Cargo" />
+                        <TextField fx:id="idCargoUp" layoutX="331.0" layoutY="184.0" prefWidth="200.0" />
+                        <Label layoutX="36.0" layoutY="217.0" text="E-mail" />
+                        <TextField fx:id="idEmailUp" layoutX="36.0" layoutY="233.0" prefWidth="200.0" promptText="Controly@Controly.com" />
+                        <Label layoutX="331.0" layoutY="217.0" text="Confirma E-mail" />
+                        <TextField fx:id="idConfEmailUp" layoutX="331.0" layoutY="233.0" prefWidth="200.0" promptText="Controly@Controly.com" />
+                        <Label layoutX="36.0" layoutY="264.0" text="Senha" />
+                        <PasswordField fx:id="idSenhaUp" layoutX="36.0" layoutY="280.0" prefWidth="200.0" promptText="********" />
+                        <Label layoutX="331.0" layoutY="264.0" text="Confirma Senha" />
+                        <PasswordField fx:id="idConfSenhaUp" layoutX="331.0" layoutY="280.0" prefWidth="200.0" promptText="********" />
+                        <Label layoutX="36.0" layoutY="314.0" text="Pergunta secreta" />
+                        <TextField fx:id="idPerguntaUp" layoutX="36.0" layoutY="330.0" prefWidth="200.0" />
+                        <Label layoutX="331.0" layoutY="314.0" text="Resposta da pergunta" />
+                        <TextField fx:id="idRespostaUp" layoutX="331.0" layoutY="330.0" prefWidth="200.0" />
+                        <Button layoutX="351.0" layoutY="471.0" mnemonicParsing="false" onAction="#botaoCadastrar" prefWidth="200.0" text="Cadastrar" />
+                        <Button layoutX="14.0" layoutY="471.0" mnemonicParsing="false" onAction="#botaoVoltar" prefWidth="200.0" text="Voltar" />
+                        <Label fx:id="idMessageUp" alignment="CENTER" layoutX="31.0" layoutY="402.0" prefHeight="18.0" prefWidth="503.0" textAlignment="CENTER" textOverrun="CLIP" wrapText="true">
+                            <font>
+                                <Font name="Cantarell Regular" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>
