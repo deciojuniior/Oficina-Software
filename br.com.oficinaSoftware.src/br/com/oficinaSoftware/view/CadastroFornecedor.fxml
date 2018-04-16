@@ -16,7 +16,7 @@
                     <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoVoltarM" prefWidth="150.0" text="Voltar" />
+                        <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoVoltarF" prefWidth="150.0" text="Voltar" />
                         <Button layoutX="324.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoSalvar" prefWidth="150.0" text="Cadastrar" />
                      </children></AnchorPane>
                     </content>

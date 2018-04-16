@@ -72,8 +72,8 @@ public class CadastroFornecedorController implements Initializable {
     }
 
     @FXML
-    private void botaoVoltarM (ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Menu.fxml"));
+    private void botaoVoltarF (ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/ListFornecedor.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
     }

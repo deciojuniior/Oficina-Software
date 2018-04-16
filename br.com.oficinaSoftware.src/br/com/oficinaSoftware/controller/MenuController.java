@@ -42,8 +42,8 @@ public class MenuController implements Initializable {
     }
 
     @FXML
-    private void botaoCadastroForncedor (ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/CadastroFornecedor.fxml"));
+    private void botaoForncedor (ActionEvent event) throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/ListFornecedor.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
 
