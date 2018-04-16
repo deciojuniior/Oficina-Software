@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1365" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.oficinaSoftware.controller.ListFornecedorController">
+    <children>
+    <Pane layoutX="-0.0" layoutY="-0.0" prefHeight="700.0" prefWidth="1365.0">
+         <children>
+              <TitledPane alignment="center" animated="false" collapsible="false" contentDisplay="CENTER" layoutX="399.0" layoutY="85.0" prefHeight="531.0" prefWidth="567.0" text="Fornecedores" textOverrun="CENTER_WORD_ELLIPSIS" />
+            <Button layoutX="404.0" layoutY="115.0" mnemonicParsing="false" onAction="#btCadastraFornecedor" text="Cadastrar" />
+            <Button layoutX="905.0" layoutY="115.0" mnemonicParsing="false" onAction="#btVoltarM" text="Voltar" />
+         </children></Pane>
+
+    </children>
+
+
+</AnchorPane>
