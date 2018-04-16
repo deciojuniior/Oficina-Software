@@ -2,17 +2,24 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" line="10" />
-    <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" line="83" />
+    <bookmark url="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" line="93" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b086d18a-8af7-4915-9a45-ce6190417dac" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/VerificaComSenhaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/UpdateUsuario.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/VerificaComSenha.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/matheus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/matheus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaControlle.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaControlle.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Pergunta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Pergunta.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Senha.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Senha.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,14 +71,6 @@
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="OI@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="OI: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
@@ -79,12 +78,12 @@
     <favorites_list name="Oficina-Software" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UsuarioDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
+    <leaf>
+      <file leaf-file-name="UpdateUsuarioController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+            <state relative-caret-position="602">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,11 +91,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java">
+      <file leaf-file-name="usuario" pinned="false" current-in-tab="false">
+        <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/usuario">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="702">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -138,15 +158,11 @@
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/util/TextFieldFormatter.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/FornecedorDAO.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/console_1.sql" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Pergunta.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Login.fxml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/console.sql" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Senha.fxml" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaControlle.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaControlle.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Menu.fxml" />
@@ -155,8 +171,17 @@
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/CadastroFornecedor.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Pergunta.fxml" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaControlle.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/VerificaComSenha.fxml" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/UpdateUsuario.fxml" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/VerificaComSenhaController.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java" />
       </list>
     </option>
@@ -173,7 +198,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="454" />
     <option name="y" value="90" />
     <option name="width" value="960" />
@@ -193,8 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,36 +233,12 @@
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="MenuController" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="DAO" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="UsuarioDAO" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Oficina-Software" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Usuario" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
@@ -264,38 +263,29 @@
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx.controls" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="invoke" type="462c0819:PsiDirectoryNode" />
+              <item name="javafx.controls" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="invoke" type="462c0819:PsiDirectoryNode" />
-              <item name="DirectMethodHandle" type="1a9f42e2:ClassTreeNode" />
+              <item name="javafx.controls" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="invoke" type="462c0819:PsiDirectoryNode" />
-              <item name="DirectMethodHandle$Holder" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="java.base" type="462c0819:PsiDirectoryNode" />
-              <item name="invoke" type="462c0819:PsiDirectoryNode" />
-              <item name="LambdaForm" type="1a9f42e2:ClassTreeNode" />
+              <item name="javafx.controls" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+              <item name="TextField" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Oficina-Software" type="b2602c69:ProjectViewProjectNode" />
@@ -339,6 +329,8 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -628,12 +620,14 @@
       <workItem from="1523658509166" duration="9658000" />
       <workItem from="1523729710961" duration="1167000" />
       <workItem from="1523888753334" duration="2676000" />
-      <workItem from="1523891713883" duration="4178000" />
+      <workItem from="1523891713883" duration="9668000" />
+      <workItem from="1523905676950" duration="6084000" />
+      <workItem from="1523921493265" duration="562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139550000" />
+    <option name="totallyTimeSpent" value="151686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,7 +640,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32929516" />
@@ -658,11 +651,12 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32959402" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23348017" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23348017" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32929516" />
       <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.050660793" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.21474358" />
+      <window_info active="true" content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.22008547" />
       <window_info anchor="right" id="Database" order="1" weight="0.16559829" />
       <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -673,7 +667,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2863436" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.050660793" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -746,7 +739,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -754,46 +747,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="105" selection-start-line="75" selection-start-column="105" selection-end-line="75" selection-end-column="105" />
+        <state relative-caret-position="780">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/br/com/oficinaSoftware/resource/PerfilUsuario.java" />
-    <entry file="file://$PROJECT_DIR$/bin/br/com/oficinaSoftware/resource/PerfilUsuario.java" />
-    <entry file="file://$PROJECT_DIR$/bin/br/com/oficinaSoftware/resource/Cadastro.class" />
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.sql/java/sql/SQLException.java">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="2625">
+          <caret line="175" column="16" selection-start-line="175" selection-start-column="16" selection-end-line="175" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="77" column="14" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.base/java/lang/ClassNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.sql/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="148" column="17" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/PerfilUsuario.java" />
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/Login.java" />
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -839,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.base/jdk/internal/reflect/UnsafeObjectFieldAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -878,6 +844,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,61 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaControlle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaControlle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="50" column="112" selection-start-line="50" selection-start-column="112" selection-end-line="50" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="63" column="95" lean-forward="true" selection-start-line="63" selection-start-column="95" selection-end-line="63" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-675">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.fxml/javafx/fxml/Initializable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/ListFornecedorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -964,20 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Cidade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="75" column="105" selection-start-line="75" selection-start-column="105" selection-end-line="75" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -998,31 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/PerfilUsuario.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1036,9 +915,6 @@
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/java.base/java/lang/invoke/LambdaForm.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jrt:///usr/lib/jvm/jdk-10!/java.base/java/lang/invoke/DirectMethodHandle$Holder.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1058,16 +934,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
           <caret line="283" selection-start-line="283" selection-end-line="283" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/ListFornecedorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <element signature="e#11964#11965#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroFornecedorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="115">
+          <caret line="75" column="105" selection-start-line="75" selection-start-column="105" selection-end-line="75" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/SenhaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="197" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerguntaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="64" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.controls/javafx/scene/control/TextField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Cidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Usuario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/VerificaComSenhaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/PerfilUsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1076,8 +1037,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="405">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/database/OI/schema/public/table/usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/resource/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
         </state>
       </provider>
     </entry>
