@@ -20,8 +20,6 @@ import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ResourceBundle;
 
-import static br.com.oficinaSoftware.controller.LoginController.*;
-
 public class UpdateUsuarioController implements Initializable {
 
     @FXML
