@@ -14,6 +14,7 @@ public class Usuario {
 	private String pergunta;
 	private String resposta;
 	private String dataNasc;
+	private String estado;
 
 	//=====Get e Set usuario
 	public String get_id() {
@@ -66,16 +67,25 @@ public class Usuario {
 	public void setResposta(String resposta) { this.resposta = resposta; }
 	public String getDataNasc() { return dataNasc; }
 	public void setDataNasc(String dataNasc) { this.dataNasc = dataNasc; }
+	public String getEstado() { return estado; }
+	public void setEstado(String estado) { this.estado = estado; }
 
 	@Override
 	public String toString() {
 		return "Usuario{" +
-				 "_id='" + _id + '\'' +
+				"_id='" + _id + '\'' +
 				", nome='" + nome + '\'' +
+				", cpf='" + cpf + '\'' +
 				", endereco='" + endereco + '\'' +
 				", cargo='" + cargo + '\'' +
 				", telefone='" + telefone + '\'' +
 				", email='" + email + '\'' +
+				", senha='" + senha + '\'' +
+				", cidade='" + cidade + '\'' +
+				", pergunta='" + pergunta + '\'' +
+				", resposta='" + resposta + '\'' +
+				", dataNasc='" + dataNasc + '\'' +
+				", estado='" + estado + '\'' +
 				'}';
 	}
 }

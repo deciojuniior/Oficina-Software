@@ -39,7 +39,7 @@ public class UsuarioDAO {
 		stmt.setString(7, usuario.getSenha());
 		stmt.setString(8, usuario.getPergunta());
 		stmt.setString(9, usuario.getResposta());
-		stmt.setInt(10, Integer.parseInt("1"));
+		stmt.setInt(10, Integer.parseInt("57"));
 		SimpleDateFormat data = new SimpleDateFormat("dd/MM/yyyy");
 		java.util.Date date = data.parse(usuario.getDataNasc());
 		SimpleDateFormat dt1 = new SimpleDateFormat("yyyy-MM-dd");
@@ -63,7 +63,7 @@ public class UsuarioDAO {
 
 	public Usuario buscarUsuario(String _id) throws ClassNotFoundException, SQLException {
 		Connection conexao = dao.conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email,datanascimento FROM usuario WHERE usuario._id= \'" + _id + "\';");
+		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email,datanascimento, cidade, estado FROM usuario_perfil WHERE _id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
 
 		Usuario u = new Usuario();
@@ -74,7 +74,10 @@ public class UsuarioDAO {
 			u.setEndereco(rs.getString("endereco"));
 			u.setEmail(rs.getString("email"));
 			u.setDataNasc(String.valueOf(rs.getDate("datanascimento")));
+			u.setCidade(rs.getString("cidade"));
+			u.setEstado(rs.getString("estado"));
 		}
 		return u;
 	}
+
 }

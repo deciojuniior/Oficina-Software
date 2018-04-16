@@ -30,6 +30,10 @@ public class PerfilUsuarioController implements Initializable {
 	private TextField idEmailP;
 	@FXML
 	private TextField idIdadeP;
+	@FXML
+	private TextField idCidade;
+	@FXML
+	private TextField idEstado;
 
 	public static Usuario USUARIO_LOGADO;
 
@@ -40,6 +44,8 @@ public class PerfilUsuarioController implements Initializable {
 		idCargoP.setText(USUARIO_LOGADO.getCargo());
 		idTelefoneP.setText(USUARIO_LOGADO.getTelefone());
 		idEmailP.setText(USUARIO_LOGADO.getEmail());
+		idCidade.setText(USUARIO_LOGADO.getCidade());
+		idEstado.setText(USUARIO_LOGADO.getEstado());
 		Long idade = 0L;
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
