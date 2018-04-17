@@ -22,7 +22,7 @@ public class EstadoDAO {
 		ResultSet rs = stmt.executeQuery();
 		
 		List<Estado> list  = new ArrayList<>();
-		if (rs.next()){
+		while (rs.next()){
 			Estado estado = new Estado();
 			estado.set_id(rs.getString("_id"));
 			estado.setNome(rs.getString("nome"));

@@ -25,7 +25,7 @@ public class Estado {
 	}
 	@Override
 	public String toString() {
-		return "Estado [_id=" + _id + ", nome=" + nome + ", uf=" + uf + "]";
+		return this.nome;
 	}
 	
 }
