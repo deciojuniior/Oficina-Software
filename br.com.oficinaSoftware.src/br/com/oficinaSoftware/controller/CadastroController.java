@@ -10,9 +10,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 
 
@@ -44,7 +47,7 @@ public class CadastroController implements Initializable {
     @FXML
     private PasswordField idConfSenha;
     @FXML
-    private TextField idCidade;
+    private ComboBox<String> btCidade;
     @FXML
     private TextField idPergunta;
     @FXML
@@ -54,6 +57,23 @@ public class CadastroController implements Initializable {
 
     @FXML
     private Label idMessage;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        //listeners();
+
+        ObservableList<String> tes =
+                FXCollections.observableArrayList(
+                        "Codigo",
+                        "Nome",
+                        "Cidade"
+                );
+
+        btCidade.setItems(tes);
+
+    }
+
+
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
@@ -171,11 +191,7 @@ public class CadastroController implements Initializable {
         tfC.formatter();
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        listeners();
 
-    }
 
     private void listeners() {
 
