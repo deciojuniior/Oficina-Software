@@ -21,6 +21,7 @@ import javafx.scene.control.TextField;
 
 
 
+
 import java.io.IOException;
 import java.net.URL;
 import java.text.ParseException;
@@ -50,7 +51,7 @@ public class CadastroController implements Initializable {
     @FXML
     private PasswordField idConfSenha;
     @FXML
-    private TextField idCidade;
+    private ComboBox<String> btCidade;
     @FXML
     private TextField idPergunta;
     @FXML
@@ -61,6 +62,7 @@ public class CadastroController implements Initializable {
     private ComboBox<Estado> btEstado;
     @FXML
     private Label idMessage;
+    
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
@@ -179,23 +181,24 @@ public class CadastroController implements Initializable {
     }
 
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
-     	EstadoDAO estado = new EstadoDAO();
-    	List<Estado> estados = null;
-		try {
-			estados = estado.buscarEstados();
-		} catch (ClassNotFoundException | SQLException | ParseException e) {
-			e.printStackTrace();
-		}
-    	ObservableList<Estado> listEstado;
-    	listEstado = FXCollections.observableArrayList(estados);
-    	btEstado.setItems(listEstado);
-    	
-    	listeners();
+    public void initialize(URL location, ResourceBundle resources){
+       EstadoDAO estado = new EstadoDAO();
+       List<Estado> estados = null;
+       try {
+            estados = estado.buscarEstados();
+        } catch (ClassNotFoundException | SQLException | ParseException e) {
+            e.printStackTrace();
+        }
 
+        ObservableList<Estado> listEstado;
+        //chega null aqui
+       listEstado = FXCollections.observableArrayList(estados);
+        btEstado.setItems(listEstado);
+
+        listeners();
     }
 
-    private void listeners() {
+    private void listeners(){
     	
         //========================CAIXA senha===========================
         idSenha.textProperty().addListener((observable, oldValue, newValue) ->{

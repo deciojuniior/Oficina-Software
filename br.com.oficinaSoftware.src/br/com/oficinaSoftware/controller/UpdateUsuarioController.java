@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -41,61 +42,90 @@ public class UpdateUsuarioController implements Initializable {
     @FXML
     private PasswordField idConfSenhaUp;
     @FXML
-    private TextField idCidadeUp;
-    @FXML
-    private TextField idPerguntaUp;
-    @FXML
     private TextField idRespostaUp;
     @FXML
     private TextField idDataNascimentoUp;
-
+    @FXML
+    private TextField idPerguntaUp;
     @FXML
     private Label idMessageUp;
+    @FXML
+    private TextField idEmailAt;
+    @FXML
+    private PasswordField idSenhaAt;
+
+
+    /*@FXML
+    private ComboBox btEstadoUp;
+    @FXML*/
+    private ComboBox btCidadeUp;
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/PerfilUsuario.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
     }
 
     @FXML
     private void botaoCadastrar(ActionEvent event) throws IOException, ClassNotFoundException, SQLException, ParseException {
-        if(verificaSeEstaVazio()){
-            idMessageUp.setText("Algum campos estar vazio.");
+
+        String idVal;
+        UsuarioDAO dao = new UsuarioDAO();
+
+        String email = idEmailAt.getText();
+        String senha = idSenhaAt.getText();
+
+        if(email.length() == 0 || senha.length() == 0){
+            idMessageUp.setText("Insira e-mail e senha altual.");
         }else{
-            if (senhaValida() && emailValida()){
-                Usuario u = new Usuario();
+            idVal = dao.getValidaPraLogar(email, senha) ;
+            if (idVal != null) {
+                if(verificaSeEstaVazio()){
+                    idMessageUp.setText("Algum campos estar vazio.");
+                }else{
+                    if (senhaValida() && emailValida()){
+                        Usuario u = new Usuario();
 
 
-                // Date data = Date.from(Instant.parse(idDataNascimento.getText()));
+                        // Date data = Date.from(Instant.parse(idDataNascimento.getText()));
 
-                u.setNome(idNomeUp.getText());
-                u.setCpf(idCpfUp.getText());
-                u.setEndereco(idEnderecoUp.getText());
-                u.setCargo(idCargoUp.getText());
-                u.setTelefone(idTelefoneUp.getText());
-                u.setEmail(idEmailUp.getText());
-                u.setSenha(idSenhaUp.getText());
-//                u.setCidade(idCidadeUp.getText());
-                u.setPergunta(idPerguntaUp.getText());
-                u.setResposta(idRespostaUp.getText());
-                u.setDataNasc(idDataNascimentoUp.getText());
+                        u.setNome(idNomeUp.getText());
+                        u.setCpf(idCpfUp.getText());
+                        u.setEndereco(idEnderecoUp.getText());
+                        u.setCargo(idCargoUp.getText());
+                        u.setTelefone(idTelefoneUp.getText());
+                        u.setEmail(idEmailUp.getText());
+                        u.setSenha(idSenhaUp.getText());
+                        //u.setCidade(btCidadeUp.add());
+                        u.setPergunta(idPerguntaUp.getText());
+                        u.setResposta(idRespostaUp.getText());
+                        u.setDataNasc(idDataNascimentoUp.getText());
 
-                String idValor = LoginController.idValor;
+                        String idValor = LoginController.idValor;
 
-                UsuarioDAO dao = new UsuarioDAO();
 
-                dao.updateUsuario(idValor,u);
-                limpaCampos();
+                        dao.updateUsuario(idValor,u);
+                        limpaCampos();
+                    }else {
+                        idMessageUp.setText("Email ou Senhas invalidos.");
+                    }
+
+                }
+
+
+
             }else {
-                idMessageUp.setText("Email ou Senhas invalidos.");
+                idMessageUp.setText("Email ou senha incorretos.");
             }
-
         }
+
+
+
+
     }
 
-    private void limpaCampos() {
+    private void limpaCampos() throws SQLException, ClassNotFoundException {
         idNomeUp.setText("");
         idCpfUp.setText("");
         idEnderecoUp.setText("");
@@ -105,10 +135,18 @@ public class UpdateUsuarioController implements Initializable {
         idSenhaUp.setText("");
         idConfSenhaUp.setText("");
         idMessageUp.setText("");
-        //idCidade.setText("");
+//        btCidadeUp.setText("");
         idPerguntaUp.setText("");
         idRespostaUp.setText("");
         idDataNascimentoUp.setText("");
+        idConfSenhaUp.setText("");
+        idConfEmailUp.setText("");
+        idEmailAt.setText("");
+        idSenhaAt.setText("");
+
+        UsuarioDAO dao = new UsuarioDAO();
+        String idUser = LoginController.idValor;
+        PerfilUsuarioController.USUARIO_LOGADO = dao.buscarUsuario(idUser);
 
     }
 
@@ -131,13 +169,14 @@ public class UpdateUsuarioController implements Initializable {
                 idCpfUp.getText().isEmpty() ||
                 idDataNascimentoUp.getText().isEmpty()||
                 idEnderecoUp.getText().isEmpty()||
-                //idCidade.getText().isEmpty()||
                 idCargoUp.getText().isEmpty()||
                 idTelefoneUp.getText().isEmpty()||
                 idEmailUp.getText().isEmpty()||
                 idSenhaUp.getText().isEmpty()||
                 idPerguntaUp.getText().isEmpty()||
                 idRespostaUp.getText().isEmpty();
+
+
     }
 
 
@@ -175,18 +214,17 @@ public class UpdateUsuarioController implements Initializable {
 
 
         idNomeUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getNome());
+        idCpfUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getCpf());
         idEnderecoUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getEndereco());
         idCargoUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getCargo());
         idTelefoneUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getTelefone());
         idEmailUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getEmail());
-        //idCidadeUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getCidade());
-        //idEstadoUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getEstado());
+        idConfEmailUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getEmail());
         idPerguntaUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getPergunta());
         idRespostaUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getResposta());
-
-    }
-
-    public void popularCampos(){
+        idDataNascimentoUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getDataNasc());
+//        btEstadoUp.set(PerfilUsuarioController.USUARIO_LOGADO.getEstado());
+//        btCidadeUp.setVisibleRowCount(PerfilUsuarioController.USUARIO_LOGADO.getCidade());
 
     }
 }

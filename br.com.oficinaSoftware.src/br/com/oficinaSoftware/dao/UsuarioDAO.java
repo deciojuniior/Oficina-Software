@@ -63,7 +63,8 @@ public class UsuarioDAO {
 
 	public Usuario buscarUsuario(String _id) throws ClassNotFoundException, SQLException {
 		Connection conexao = dao.conexaoUsuario();
-		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email,datanascimento, cidade, estado FROM usuario_perfil WHERE _id= \'" + _id + "\';");
+		PreparedStatement stmt = conexao.prepareStatement("SELECT nome, cargo, telefone, endereco, email, datanascimento, cidade, estado, cpf, pergunta, resposta" +
+				" FROM usuario_perfil WHERE _id= \'" + _id + "\';");
 		ResultSet rs = stmt.executeQuery();
 
 		Usuario u = new Usuario();
@@ -76,6 +77,9 @@ public class UsuarioDAO {
 			u.setDataNasc(String.valueOf(rs.getDate("datanascimento")));
 			u.setCidade(rs.getString("cidade"));
 			u.setEstado(rs.getString("estado"));
+			u.setCpf(rs.getString("cpf"));
+			u.setResposta(rs.getString("resposta"));
+			u.setPergunta(rs.getString("pergunta"));
 		}
 		return u;
 	}
@@ -84,7 +88,7 @@ public class UsuarioDAO {
 		try {
 		Connection conexao = dao.conexaoUsuario();
 		PreparedStatement stmt = conexao.prepareStatement("UPDATE usuario SET nome =\'" + u.getNome() + "\',cpf =\'" + u.getCpf() + "\',cargo =\'" + u.getCargo() + "\', endereco =\'" + u.getEndereco() + "\', " +
-				"telefone =\'" + u.getTelefone() + "\',email =\'" + u.getEmail() + "\',senha =\'" + u.getSenha() + "\',pergunta =\'" + u.getPergunta() + "\',resposta =\'" + u.get_id() + "\' WHERE _id = \'" + _id + "\';");
+				"telefone =\'" + u.getTelefone() + "\',email =\'" + u.getEmail() + "\',senha =\'" + u.getSenha() + "\',pergunta =\'" + u.getPergunta() + "\',resposta =\'" + u.getResposta() + "\' WHERE _id = \'" + _id + "\';");
 		stmt.executeQuery();
 		}catch (Exception e) {
 

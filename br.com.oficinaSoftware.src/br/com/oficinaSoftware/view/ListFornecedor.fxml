@@ -10,8 +10,8 @@
     <Pane layoutX="-0.0" layoutY="-0.0" prefHeight="700.0" prefWidth="1365.0">
          <children>
               <TitledPane alignment="center" animated="false" collapsible="false" contentDisplay="CENTER" layoutX="399.0" layoutY="85.0" prefHeight="531.0" prefWidth="567.0" text="Fornecedores" textOverrun="CENTER_WORD_ELLIPSIS" />
-            <Button layoutX="404.0" layoutY="115.0" mnemonicParsing="false" onAction="#btCadastraFornecedor" text="Cadastrar" />
-            <Button layoutX="905.0" layoutY="115.0" mnemonicParsing="false" onAction="#btVoltarM" text="Voltar" />
+            <Button layoutX="404.0" layoutY="115.0" mnemonicParsing="false" onAction="#btCadastraFornecedor" prefWidth="100.0" text="Cadastrar" />
+            <Button layoutX="862.0" layoutY="115.0" mnemonicParsing="false" onAction="#btVoltarM" prefWidth="100.0" text="Menu" />
          </children></Pane>
 
     </children>

@@ -15,9 +15,9 @@ public class EstadoDAO {
 	DAO dao = new DAO();
 
 	
-	public List<Estado> buscarEstados() throws  ClassNotFoundException,SQLException,ParseException {
+	public List<Estado> buscarEstados() throws  ClassNotFoundException,SQLException, ParseException {
 		Connection conexao = dao.conexaoUsuario();
-		String sql = "select * from estado";
+		String sql = "select * from estado;";
 		PreparedStatement stmt = conexao.prepareStatement(sql, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 		ResultSet rs = stmt.executeQuery();
 		

@@ -4,7 +4,7 @@ public class Estado {
 	private String _id;
 	private String nome;
 	private String uf;
-	
+
 	public String get_id() {
 		return _id;
 	}
@@ -27,5 +27,5 @@ public class Estado {
 	public String toString() {
 		return this.nome;
 	}
-	
+
 }
