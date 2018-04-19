@@ -5,8 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import br.com.oficinaSoftware.entity.Produto;
 import br.com.oficinaSoftware.dao.ProdutoDAO;
-import javafx.scene.input.InputMethodTextRun;
-
 import java.awt.*;
 import java.io.IOException;
 import java.net.URL;

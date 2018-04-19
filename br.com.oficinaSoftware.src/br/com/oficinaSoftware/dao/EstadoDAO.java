@@ -24,7 +24,7 @@ public class EstadoDAO {
 		List<Estado> list  = new ArrayList<>();
 		while (rs.next()){
 			Estado estado = new Estado();
-			estado.set_id(rs.getString("id"));
+			estado.set_id(rs.getString("_id"));
 			estado.setNome(rs.getString("nome"));
 			estado.setUf(rs.getString("uf"));
 			list.add(estado);

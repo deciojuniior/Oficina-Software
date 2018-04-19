@@ -1,6 +1,8 @@
 package br.com.oficinaSoftware.controller;
 
+import br.com.oficinaSoftware.dao.EstadoDAO;
 import br.com.oficinaSoftware.dao.UsuarioDAO;
+import br.com.oficinaSoftware.entity.Estado;
 import br.com.oficinaSoftware.entity.Usuario;
 import br.com.oficinaSoftware.resource.Main;
 import br.com.oficinaSoftware.util.TextFieldFormatter;
@@ -19,6 +21,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.ParseException;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class UpdateUsuarioController implements Initializable {
@@ -53,12 +56,9 @@ public class UpdateUsuarioController implements Initializable {
     private TextField idEmailAt;
     @FXML
     private PasswordField idSenhaAt;
+    @FXML
+    private ComboBox<Estado> btEstado;
 
-
-    /*@FXML
-    private ComboBox btEstadoUp;
-    @FXML*/
-    private ComboBox btCidadeUp;
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
@@ -211,7 +211,15 @@ public class UpdateUsuarioController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+ 	   EstadoDAO estado = new EstadoDAO();
+       List<Estado> estados = null;
+       try {
+            estados = estado.buscarEstados();
+        } catch (ClassNotFoundException | SQLException | ParseException e) {
+            e.printStackTrace();
+        }
+       
+        btEstado.getItems().addAll(estados);
 
         idNomeUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getNome());
         idCpfUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getCpf());
@@ -223,7 +231,7 @@ public class UpdateUsuarioController implements Initializable {
         idPerguntaUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getPergunta());
         idRespostaUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getResposta());
         idDataNascimentoUp.setText(PerfilUsuarioController.USUARIO_LOGADO.getDataNasc());
-//        btEstadoUp.set(PerfilUsuarioController.USUARIO_LOGADO.getEstado());
+//      btEstado.set(PerfilUsuarioController.USUARIO_LOGADO.getEstado());
 //        btCidadeUp.setVisibleRowCount(PerfilUsuarioController.USUARIO_LOGADO.getCidade());
 
     }

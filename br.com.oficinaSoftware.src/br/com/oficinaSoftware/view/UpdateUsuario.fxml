@@ -31,9 +31,9 @@
                         <Label layoutX="331.0" layoutY="125.0" text="Endereço" />
                         <TextField fx:id="idEnderecoUp" layoutX="331.0" layoutY="141.0" prefWidth="200.0" />
                         <Label layoutX="36.0" layoutY="177.0" text="Estado" />
-                        <ComboBox fx:id="btEstadoUp" layoutX="36.0" layoutY="193.0" prefWidth="200.0" />
+                        <ComboBox fx:id="btEstado" layoutX="36.0" layoutY="193.0" prefWidth="200.0" />
                         <Label layoutX="331.0" layoutY="177.0" text="Cidade" />
-                        <ChoiceBox fx:id="btCidadeUp" layoutX="331.0" layoutY="193.0" prefWidth="200.0" />
+                        <ChoiceBox fx:id="btCidade" layoutX="331.0" layoutY="193.0" prefWidth="200.0" />
                         <Label layoutX="36.0" layoutY="226.0" text="Telefone" />
                         <TextField fx:id="idTelefoneUp" layoutX="36.0" layoutY="242.0" onKeyReleased="#tbTelefone" prefWidth="200.0" promptText="(00)00000-0000" />
                         <Label layoutX="331.0" layoutY="226.0" text="Cargo" />

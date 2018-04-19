@@ -6,8 +6,6 @@ import br.com.oficinaSoftware.entity.Estado;
 import br.com.oficinaSoftware.entity.Usuario;
 import br.com.oficinaSoftware.resource.Main;
 import br.com.oficinaSoftware.util.TextFieldFormatter;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -66,9 +64,9 @@ public class CadastroController implements Initializable {
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
-        /*Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
         Scene scene = new Scene(root);
-        Main.myStage.setScene(scene);*/
+        Main.myStage.setScene(scene);
         System.out.println(btEstado.getSelectionModel().getSelectedItem());
     }
 
@@ -190,10 +188,7 @@ public class CadastroController implements Initializable {
         } catch (ClassNotFoundException | SQLException | ParseException e) {
             e.printStackTrace();
         }
-
-        //ObservableList<Estado> listEstado;
-        //chega null aqui
-       //listEstado = FXCollections.observableArrayList(estados);
+       
         btEstado.getItems().addAll(estados);
 
         listeners();

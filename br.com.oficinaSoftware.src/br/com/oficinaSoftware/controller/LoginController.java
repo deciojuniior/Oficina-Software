@@ -18,7 +18,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import br.c.o.popup.TelaLembraSenha;
 
 public class LoginController implements Initializable {
 

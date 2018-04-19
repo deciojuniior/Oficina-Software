@@ -1,6 +1,8 @@
 package br.com.oficinaSoftware.controller;
 
+import br.com.oficinaSoftware.dao.EstadoDAO;
 import br.com.oficinaSoftware.dao.FornecedorDAO;
+import br.com.oficinaSoftware.entity.Estado;
 import br.com.oficinaSoftware.entity.Fornecedor;
 import br.com.oficinaSoftware.resource.Main;
 import br.com.oficinaSoftware.util.TextFieldFormatter;
@@ -10,12 +12,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class CadastroFornecedorController implements Initializable {
@@ -31,6 +36,8 @@ public class CadastroFornecedorController implements Initializable {
     private TextField idEmailFornecedor;
     @FXML
     private Label idMessage;
+    @FXML
+    private ComboBox<Estado> btEstado;
 
     @FXML
     private void tbCnpj(){
@@ -99,6 +106,14 @@ public class CadastroFornecedorController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+    	   EstadoDAO estado = new EstadoDAO();
+           List<Estado> estados = null;
+           try {
+                estados = estado.buscarEstados();
+            } catch (ClassNotFoundException | SQLException | ParseException e) {
+                e.printStackTrace();
+            }
+           
+            btEstado.getItems().addAll(estados);
     }
 }
