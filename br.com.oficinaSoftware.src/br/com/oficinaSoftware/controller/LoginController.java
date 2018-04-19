@@ -17,6 +17,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import br.c.o.popup.TelaLembraSenha;
 
 public class LoginController implements Initializable {
 
@@ -54,9 +56,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private void recupereSenha(ActionEvent event) throws  IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Pergunta.fxml"));
-        Scene scene = new Scene(root);
-        Main.myStage.setScene(scene);
+        new TelaLembraSenha().start(new Stage());
 
     }
 

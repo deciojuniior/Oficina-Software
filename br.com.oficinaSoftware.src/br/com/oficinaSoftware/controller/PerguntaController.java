@@ -19,8 +19,6 @@ import javafx.scene.control.TextField;
 
 public class PerguntaController implements Initializable {
 
-    public static String senhaUser;
-
     @FXML
     private TextField idPergunta;
     @FXML
@@ -36,21 +34,20 @@ public class PerguntaController implements Initializable {
     }
 
     @FXML
-    private void btVerSenha(ActionEvent event) throws IOException, ParseException, SQLException, ClassNotFoundException {
+    private void btVerSenha(ActionEvent event) throws ParseException, SQLException, ClassNotFoundException {
         UsuarioDAO dao = new UsuarioDAO();
+        String senhaUser;
 
 
         String perg = idPergunta.getText();
         String resp = idResposta.getText();
 
         if(perg.length() == 0 || resp.length() == 0){
-            idMensagem.setText("Algum dos campos está vazio.");
+            idMensagem.setText("Algum dos campos esta vazio.");
         }else{
             senhaUser = dao.buscarSenhar(perg,resp) ;
             if (senhaUser != null) {
-                Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Senha.fxml"));
-                Scene scene = new Scene(root);
-                Main.myStage.setScene(scene);
+                idMensagem.setText("Sua senha e "+senhaUser);
             }else {
                 idMensagem.setText("Não encontrado");
             }
