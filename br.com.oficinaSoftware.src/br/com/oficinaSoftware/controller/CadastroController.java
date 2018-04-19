@@ -189,8 +189,10 @@ public class CadastroController implements Initializable {
         } catch (ClassNotFoundException | SQLException | ParseException e) {
             e.printStackTrace();
         }
+
         ObservableList<Estado> listEstado;
-        listEstado = FXCollections.observableArrayList(estados);
+        //chega null aqui
+       listEstado = FXCollections.observableArrayList(estados);
         btEstado.setItems(listEstado);
 
         listeners();

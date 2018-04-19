@@ -6,11 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b086d18a-8af7-4915-9a45-ce6190417dac" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,11 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CadastroController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CadastroController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="192" column="7" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
+            <state relative-caret-position="400">
+              <caret line="192" column="42" lean-forward="true" selection-start-line="192" selection-start-column="42" selection-end-line="192" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,8 +103,8 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="642">
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,21 +115,17 @@
       <file leaf-file-name="Estado.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="240">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
-              <folding>
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EstadoDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EstadoDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,9 +198,9 @@
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/UpdateUsuarioController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java" />
         <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java" />
+        <option value="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java" />
       </list>
     </option>
   </component>
@@ -244,7 +236,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -560,6 +551,7 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -722,11 +714,12 @@
       <workItem from="1524155278782" duration="821000" />
       <workItem from="1524156139321" duration="3393000" />
       <workItem from="1524160803948" duration="3315000" />
+      <workItem from="1524164820299" duration="198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173738000" />
+    <option name="totallyTimeSpent" value="173936000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,11 +744,11 @@
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32959402" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32929516" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23348017" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23348017" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32929516" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.24145299" />
+      <window_info content_ui="combo" x="676" y="99" width="567" height="908" id="Project" order="0" sideWeight="0.70154184" visible="true" weight="0.24412394" />
       <window_info anchor="right" id="Database" order="1" weight="0.1693376" />
       <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -847,6 +840,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="192" column="7" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -1081,10 +1111,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Cadastro.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1098,14 +1124,6 @@
           <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/view/Login.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1124,20 +1142,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="192" column="7" selection-start-line="192" selection-start-column="7" selection-end-line="192" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1146,19 +1154,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/entity/Estado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="240">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/EstadoDAO.java">
+    <entry file="file://$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/controller/CadastroController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="400">
+          <caret line="192" column="42" lean-forward="true" selection-start-line="192" selection-start-column="42" selection-end-line="192" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
