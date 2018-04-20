@@ -9,7 +9,7 @@ public class DAO {
 	public Connection conexaoUsuario() throws SQLException, ClassNotFoundException {
 		String url ="jdbc:postgresql://localhost:5432/OI";
         String usuario="postgres";
-        String senha = "postgres";
+        String senha = "1234";
 
         Class.forName("org.postgresql.Driver");
         Connection conexao = DriverManager.getConnection(url,usuario,senha);
