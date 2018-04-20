@@ -67,7 +67,7 @@ public class PerfilUsuarioController implements Initializable {
 
 	@FXML
 	private void btAlterarPerfil(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/VerificaComSenha.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/UpdateUsuario.fxml"));
 		Scene scene = new Scene(root);
 		Main.myStage.setScene(scene);
 	}

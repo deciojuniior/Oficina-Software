@@ -1,6 +1,8 @@
 package br.com.oficinaSoftware.controller;
 
+import br.com.oficinaSoftware.dao.EstadoDAO;
 import br.com.oficinaSoftware.dao.UsuarioDAO;
+import br.com.oficinaSoftware.entity.Estado;
 import br.com.oficinaSoftware.entity.Usuario;
 import br.com.oficinaSoftware.resource.Main;
 import br.com.oficinaSoftware.util.TextFieldFormatter;
@@ -10,9 +12,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+
 
 
 
@@ -20,6 +24,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.text.ParseException;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.ResourceBundle;
 
 
@@ -44,22 +49,25 @@ public class CadastroController implements Initializable {
     @FXML
     private PasswordField idConfSenha;
     @FXML
-    private TextField idCidade;
+    private ComboBox<String> btCidade;
     @FXML
     private TextField idPergunta;
     @FXML
     private TextField idResposta;
     @FXML
     private TextField idDataNascimento;
-
+    @FXML
+    private ComboBox<Estado> btEstado;
     @FXML
     private Label idMessage;
+    
 
     @FXML
     private void botaoVoltar(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/oficinaSoftware/view/Login.fxml"));
         Scene scene = new Scene(root);
         Main.myStage.setScene(scene);
+        System.out.println(btEstado.getSelectionModel().getSelectedItem());
     }
 
     @FXML
@@ -172,13 +180,22 @@ public class CadastroController implements Initializable {
     }
 
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        listeners();
+    public void initialize(URL location, ResourceBundle resources){
+       EstadoDAO estado = new EstadoDAO();
+       List<Estado> estados = null;
+       try {
+            estados = estado.buscarEstados();
+        } catch (ClassNotFoundException | SQLException | ParseException e) {
+            e.printStackTrace();
+        }
+       
+        btEstado.getItems().addAll(estados);
 
+        listeners();
     }
 
-    private void listeners() {
-
+    private void listeners(){
+    	
         //========================CAIXA senha===========================
         idSenha.textProperty().addListener((observable, oldValue, newValue) ->{
             if(newValue.length() > oldValue.length()){

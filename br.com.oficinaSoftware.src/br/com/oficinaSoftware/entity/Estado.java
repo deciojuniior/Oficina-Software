@@ -4,7 +4,7 @@ public class Estado {
 	private String _id;
 	private String nome;
 	private String uf;
-	
+
 	public String get_id() {
 		return _id;
 	}
@@ -25,7 +25,7 @@ public class Estado {
 	}
 	@Override
 	public String toString() {
-		return "Estado [_id=" + _id + ", nome=" + nome + ", uf=" + uf + "]";
+		return this.nome;
 	}
-	
+
 }

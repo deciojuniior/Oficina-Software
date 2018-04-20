@@ -33,7 +33,7 @@
     <database id="10" parent="1" name="Aps">
       <ObjectId>33015</ObjectId>
     </database>
-    <database id="11" parent="1" name="Revisão">
+    <database id="11" parent="1" name="RevisÃ£o">
       <ObjectId>41207</ObjectId>
     </database>
     <database id="12" parent="1" name="edu">

@@ -8,7 +8,7 @@
     <list default="true" id="b086d18a-8af7-4915-9a45-ce6190417dac" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/_src_/database/OI.2gkAAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/src/database/OI.2gkAAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d36c22ce-9edd-4c6d-a4a6-d91b55e9b82c/storage_v2/src/database/OI.2gkAAA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/br.com.oficinaSoftware.src/br/com/oficinaSoftware/dao/DAO.java" afterDir="false" />

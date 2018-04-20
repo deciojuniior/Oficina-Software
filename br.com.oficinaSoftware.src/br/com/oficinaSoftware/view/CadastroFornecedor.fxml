@@ -16,8 +16,8 @@
                     <content>
                         <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoVoltarF" prefWidth="150.0" text="Voltar" />
-                        <Button layoutX="324.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoSalvar" prefWidth="150.0" text="Cadastrar" />
+                        <Button layoutX="324.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoVoltarF" prefWidth="150.0" text="Voltar" />
+                        <Button layoutX="14.0" layoutY="275.0" mnemonicParsing="false" onAction="#botaoSalvar" prefWidth="150.0" text="Cadastrar" />
                      </children></AnchorPane>
                     </content>
                 </TitledPane>
@@ -32,7 +32,7 @@
                 <Label layoutX="93.0" layoutY="168.0" text="E-mail" />
                 <TextField fx:id="idEmailFornecedor" layoutX="93.0" layoutY="184.0" prefWidth="200.0" promptText="Controly@Controly.com" />
             <Label layoutX="312.0" layoutY="168.0" text="Estado" />
-            <ComboBox layoutX="312.0" layoutY="184.0" prefWidth="200.0" />
+            <ComboBox fx:id="btEstado" layoutX="312.0" layoutY="184.0" prefWidth="200.0" />
                 <Label fx:id="idMessage" layoutX="210.0" layoutY="330.0" />
             <Label layoutX="93.0" layoutY="216.0" text="Cidade" />
             <ComboBox layoutX="93.0" layoutY="232.0" prefWidth="200.0" />
